@@ -1,0 +1,91 @@
+/**
+Palette used: https://colorhunt.co/palette/202175
+ */
+
+.root {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-family: "Common monospace fonts";
+    -fx-border-width: 2px;
+    -fx-base: #1b262c;
+}
+
+:focused {
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: #00b7c2;
+}
+
+#title {
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+}
+
+.button {
+    -fx-border-radius: 4px;
+    -fx-background-position: top;
+    -fx-background-radius: 8px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8.0, 0.5, 0.0, 0.0);
+
+}
+
+.button:hover {
+    -fx-border-color: #00b7c2;
+}
+
+
+.button:pressed {
+
+}
+
+.button#recommanded {
+    -fx-text-fill: white;
+    -fx-border-color: #00b7c2;
+    -fx-background-color: #00b7c2;
+}
+
+.button#recommanded:hover {
+    -fx-text-fill: black;
+    -fx-background-color: white
+}
+
+.check-box .box {
+    -fx-border-color: grey;
+    -fx-border-radius: 4px;
+    -fx-background-color: white;
+    -fx-background-radius: 4px;
+}
+.check-box:selected > .box > .mark,
+.check-box:indeterminate > .box > .mark {
+    -fx-background-color: white;
+}
+
+.check-box:focused .box {
+    -fx-background-color: white;
+    -fx-border-color: #00b7c2;
+    -fx-focus-color: #00b7c2;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #00b7c2;
+    -fx-border-color: transparent;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-alignment: baseline-left;
+    -fx-min-width: 128px;
+}
+
+.text-field:focused {
+    -fx-background-color: white;
+}
+
+.label#warning {
+    -fx-font-size: 14;
+    -fx-text-fill: #fdcb9e;
+}
+
+#bubblo {
+    -fx-fill: #00b7c2;
+}
