@@ -1,0 +1,80 @@
+.root {
+    -fx-font-size: 16px;
+    -fx-font-family: "Common monospace fonts";
+    -fx-border-width: 2px;
+}
+
+:focused {
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: deeppink;
+}
+
+#title {
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+}
+
+.button {
+    -fx-border-radius: 4px;
+    -fx-background-position: top;
+    -fx-background-radius: 8px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8.0, 0.5, 0.0, 0.0);
+
+}
+
+.button:hover {
+    -fx-border-color: deeppink;
+}
+
+
+.button:pressed {
+
+}
+
+.button#recommanded {
+    -fx-text-fill: white;
+    -fx-border-color: deeppink;
+    -fx-background-color: deeppink;
+}
+
+.button#recommanded:hover {
+    -fx-text-fill: black;
+    -fx-background-color: white
+}
+
+.check-box .box {
+    -fx-border-color: grey;
+    -fx-border-radius: 4px;
+    -fx-background-color: white;
+    -fx-background-radius: 4px;
+}
+.check-box:selected > .box > .mark,
+.check-box:indeterminate > .box > .mark {
+    -fx-background-color: white;
+}
+
+.check-box:focused .box {
+    -fx-background-color: white;
+    -fx-border-color: deeppink;
+    -fx-focus-color: deeppink;
+}
+
+.check-box:selected .box {
+    -fx-background-color: deeppink;
+    -fx-border-color: transparent;
+}
+
+.text-field, .password-field {
+    -fx-alignment: baseline-left;
+    -fx-min-width: 128px;
+}
+
+.label#warning {
+    -fx-font-size: 14;
+    -fx-text-fill: orangered;
+}
+
+#bubblo {
+    -fx-fill: hotpink;
+}
