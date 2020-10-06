@@ -17,5 +17,5 @@ There are many tasks you can do.
 
 1- Add a decypher function.  
 2- Add a menu where you can choose between cypher or decypher.  
-3- Make a better vigenere algorithm, if you can.
+3- Make a better vigenere algorithm, if you can.<br/>
 4- TBA.  
