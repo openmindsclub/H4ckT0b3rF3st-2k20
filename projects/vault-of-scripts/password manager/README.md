@@ -1,8 +1,8 @@
-##Password Manager
+## Password Manager 
 This is a script that manages (stores, loads and generates) your password localy (for all you paranoids that don't trust the tools available
 all over the internet)
 
-###Setup 
+### Setup 
 To get started you'll need to install the python packages.
 To do that you can use the command 
 ```bash 
@@ -25,12 +25,12 @@ Here are things you can do to complete this implementation:
 * Use a database instead of a binary file (you can use google storage services if you want)
 * Add A GUI to complete the app using pyQt or pyWebView
 
-###Resource
+### Resource
 * [pickle](https://docs.python.org/3/library/pickle.html)
 * [pyperclip](https://pypi.org/project/pyperclip/)
 * [pywebview](https://pypi.org/project/pywebview/)
 * [PyQt5](https://pypi.org/project/PyQt5/)
 * [pymongo](https://pypi.org/project/pymongo/)
-* You'll find some encryption algorithms in this repo [H4ckT0b3rF3st-2k20/projects/vault-of-scripts/Vigenere-chiffrement/](H4ckT0b3rF3st-2k20/projects/vault-of-scripts/Vigenere-chiffrement/
+* You'll find some encryption algorithms in this repo [Vigenere-chiffrement](https://github.com/openmindsclub/H4ckT0b3rF3st-2k20/tree/main/projects/vault-of-scripts/Vigenere-chiffrement
 )
 
