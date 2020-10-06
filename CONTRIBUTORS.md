@@ -1,1 +1,5 @@
 #### [cr105ph1nx](https://github.com/cr105ph1nx)
+
+#### [Shellc0d3](https://github.com/shellc0d3)
+
+#### [Ly3s](https://github.com/Qtty)
