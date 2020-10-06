@@ -15,7 +15,7 @@ letters.
 There are many tasks you can do.
 
 
-1- Add a decypher function.  
-2- Add a menu where you can choose between cypher or decypher.  
+1- Add a decrypt function.  
+2- Add a menu where you can choose between cypher or decrypte.  
 3- Make a better vigenere algorithm, if you can.
 4- TBA.  
