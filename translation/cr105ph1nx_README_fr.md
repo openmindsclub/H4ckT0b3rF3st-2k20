@@ -23,7 +23,7 @@
 
 
 On espére que cet événement sera votre premier pas vers votre riche parcours de contribution aux projets Libre Open Source! <br/> <br/>
-En hostant Hacktoberfest 2020, OpenMinds Club vise à encourager tout le monde à contribuer aux projets Libre Open Source comme cela a été et restera toujours notre philosophie et notre objectif fondamental. <br/> Ce repository est ouvert à toute personne souhaitant commencer leur aventure de contribution. Quant aux débutants, vous êtes également les bienvenus à participer à notre Hacktoberfest! Assurez-vous d'en savoir plus sur l'[open source] (https://github.com/open-source). <br/> <br/>
+En organisant Hacktoberfest 2020, OpenMinds Club vise à encourager tout le monde à contribuer aux projets Libre Open Source comme cela a été et restera toujours notre philosophie et notre objectif fondamental. <br/> Ce repository est ouvert à toute personne souhaitant commencer leur aventure de contribution. Quant aux débutants, vous êtes également les bienvenus à participer à notre Hacktoberfest! Assurez-vous d'en savoir plus sur l'[open source] (https://github.com/open-source). <br/> <br/>
 
 Il n'existe pas de contribution qu'on considére insignifiante. Cependant, chaque pull request doit, bien sûr, suivre certaines directives mentionnées [ici] (https://hacktoberfest.digitalocean.com/details#quality-standards). Tout OpenMinds Club vous souhaite la bienvenue parmi notre famille, que ce soit pour assister à notre FOS Talk, Git / Github Workhop, ou pour relever les défis du Openfest. <br/> <br/>
 Veuillez lire notre [Code de conduite des événements] (https://docs.google.com/document/d/1gFKOhyUqMZzrZcbq8A_TpO5x9J9HK6agv70awCH8pyI/edit) avant de participer. <br/> <br/>
