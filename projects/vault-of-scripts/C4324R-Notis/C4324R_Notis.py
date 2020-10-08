@@ -1,28 +1,46 @@
-'''Welcome to C4324R Notis, an attempt at creating a caesar cypher using
-python and my shitty knowledge this took me more or less 10 minutes
-Vae Victis, AVE CAESAR
-'''
-
-#Step one : create an alphabet
-
 import string
-alphabetum = list(string.ascii_lowercase)
 
-#Step two : giving a promt for writing a sentence.
-nuntius = input('Please write the message you wanna code : \n Message : ')
-rotatione = int(input('How many positions you want the cypher to rotate? : '))
+def notis(nts, rotatione, alphabetum):
+#Step four : creating the cipher from message
+  codedNuntius = ''
+  for i in nts:
+      if i.isalpha() == False:
+          codedNuntius += i
+      else:
+          statum = alphabetum.index(i.lower()) + rotatione
+          codedNuntius += alphabetum[statum % 25]
+  return codedNuntius
 
-#Step three : creating the caesar cypher.
+def recito(nts, rotatione, alphabetum):
+#Step four : deciphering the message
+  decodedNuntius = ''
+  for i in nts:
+      if i.isalpha() == False:
+          decodedNuntius += i
+      else:
+          statum = alphabetum.index(i.lower()) - rotatione
+          decodedNuntius += alphabetum[statum % 25]
+  return decodedNuntius
 
-def notis(nts, rotatione):
-    codedNuntius = ''
-    for i in nts:
-        if i.isalpha() == False:
-            codedNuntius += i
-        else:
-            statum = alphabetum.index(i.lower()) + rotatione
-            codedNuntius += alphabetum[statum % 25]
-    return codedNuntius
+def main(alphabetum):
+    #Step two : giving a promt for writing a sentence.
+    arbitrium = int(input('''
+    Do you want to:
+      (1) Cypher a Message
+      (2) Decypher a Message
+    >>> '''))
+    nuntius = input('\nMessage : ')
+    rotatione = int(input('Number of rotations : '))
 
-#Step four : print the ciphered message
-print(notis(nuntius,rotatione))
+    #Step three : user chooses to either cipher or decipher
+    if(arbitrium == 1):
+    #Step five : print the ciphered message
+      print('>>> ', notis(nuntius, rotatione, alphabetum))
+    else:
+    #Step five : print the deciphered message
+      print('>>> ', recito(nuntius, rotatione, alphabetum))
+
+if __name__ == "__main__":
+    #Step one : create an alphabet
+    alphabetum = list(string.ascii_lowercase)
+    main(alphabetum)
