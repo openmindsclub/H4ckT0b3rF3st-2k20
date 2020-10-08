@@ -13,9 +13,9 @@ This might be updated, depending on what the Praetorian guard wants.
 As the late great Caesar ordered, here are the tasks you have to do now.
 
 
-1- Add a decypher function.  
-2- Add a menu where you can chose between cypher or decypher.  
+1- Add a decypher function.(done)     
+2- Add a menu where you can chose between cypher or decypher.(done)   
 3- Respect the latin-centric naming convention, if a latin name isn't found, you can use 
-an english name and add "num" at the end.  
+an english name and add "num" at the end.(done)   
 4- TBA.  
 
