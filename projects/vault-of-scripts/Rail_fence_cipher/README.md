@@ -11,4 +11,5 @@ python3 railFence.py
 # Tasks
 
 * complete the railFenceDecryption() function.
+* implement support for command line arguments.
 * fix my messy code.
