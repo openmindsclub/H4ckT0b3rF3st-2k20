@@ -3,3 +3,6 @@
 
 # Python compiled files
 *.pyc
+
+# Virtual Environment
+venv/
