@@ -1,0 +1,15 @@
+PROGRAM Test
+#Test TP compilation 2020
+INTEGER A <-2
+NUMERIC Ab <- 1.5
+NUMERIC Ba <-5.5
+NUMERIC C <- 385.5
+NUMERIC D
+D <- Ab - 5 + Ba * 2
+WHILE (D != 3.5)
+{
+     D <-((C>3.5), C/2.5, 1.5)
+     A - <- 1
+     C <- C/10.5
+}
+END
