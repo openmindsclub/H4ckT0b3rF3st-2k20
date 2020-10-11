@@ -1,0 +1,4 @@
+ 
+cd to your grub efi file directory
+run patch.sh as root
+if your boot is brocken go to your bios and make grubx64backup.efi your default boot entry
