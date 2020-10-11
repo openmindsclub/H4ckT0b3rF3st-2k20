@@ -13,6 +13,8 @@ USTHB/ L3 ISIL
 ### Skills
 * cook patisserie
 * android devlopement
+*dressmaker
+
 
 
 ### Profile Links
