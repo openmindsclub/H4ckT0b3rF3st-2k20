@@ -13,10 +13,9 @@ USTHB/ L3 ISIL
 ### Skills
 * cook patisserie
 * android devlopement
-*dressmaker
+* dressmaker
 
 
 
 ### Profile Links
 [chahrazed29](https://github.com/chahrazed29)
-
