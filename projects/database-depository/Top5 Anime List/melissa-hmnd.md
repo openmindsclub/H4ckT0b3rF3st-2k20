@@ -21,7 +21,7 @@ Soul Eater is about a group of students who attend a school for aspiring demon h
 
 ### Yona of the Dawn (24 eps):  
 * **Status:** Completed<br/> 
-* **Studio:** Studio <br/>
+* **Studio:** Pierrot <br/>
 * **Genre:** Adventure fiction, High fantasy, Romance novel <br/><br/> 
 Yona a princess who wanted to avenge her dad who got killed after her 16th birthday.
 
