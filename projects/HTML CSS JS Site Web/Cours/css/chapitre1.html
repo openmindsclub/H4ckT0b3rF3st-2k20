@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+
+        <a href="../../acceuil.html" ><i> Accueil</i></a>
+        <a href="../html/index.html" ><i> HTML</i></a>
+        <a href="index.html"><i >CSS</i></a>
+        <a href="../js/index.html"><i >JavaScript</i></a>
+
+      </nav>
+
+<!--hada l menu li yji mel coté-->
+<nav id="menuv">
+ <header>
+   <h3 style="text-align: center;">Contenu du cours</h3>
+ </header>
+ <li>
+   <a href="chapitre1.html">Feuilles de style</a>
+ </li>
+ <li>
+   <a href="chapitre2.html">Les principales propriétés</a>
+ </li>
+ <li>
+   <a href="chapitre3.html">Dimensions et positions </a>
+ </li>
+ <li>
+   <a href="chapitre4.html">Quiz</a>
+ </li>
+</nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Feuilles de style</h2>
+            </header>
+
+              <h3>la syntaxe CSS de base</h3>
+              <p>Une feuille de style contient la définition de différentes règles CSS. C'est en appliquant ces règles qu'on peut mettre en forme les éléments, ou plus concrètement leur donner du style. Une règle CSS est divisée en 2 parties :</p>
+              <ul>
+                <li>le sélecteur</li>
+                <li>le bloc de déclaration</li>
+              </ul>
+
+             <p>C'est le sélecteur qui détermine ou identifie les parties du document auxquelles sera appliqué le style. Il sert à sélectionner l'élément que l'on a envie de mettre en forme. Le bloc de déclaration, quant à lui, contient les déclarations des styles à appliquer. Il est toujours mis entre 2 accolades :</p>
+             <p>body
+               {
+                 color:red
+               }
+             </p>
+             <p>Ici, body est le sélecteur alors que le bloc de déclaration est la zone délimitée par les accolades. Autrement dit, les styles définis entre accolades seront appliqués à la balise body.</p>
+
+             <h3>Le bloc de déclaration CSS</h3>
+             <p>Dans un bloc de déclaration, on liste tous les styles que l'on veut utiliser pour l'élément sélectionné. Ce bloc est composé de déclarations qui elles-mêmes contiennent une propriété et une valeur. La propriété correspond à l'attribut qu'on souhaite changer. A chaque propriété peut être affectée une valeur. Une propriété et une valeur sont toujours séparées par le symbole "deux points" (:).</p>
+             <p>Reprenons l'exemple de tout à l'heure, tout en regardant bien le bloc :</p>
+             <p>body
+               {
+                 color:red
+               }
+              </p>
+              <p>color est une propriété qui spécifie la couleur, red est une valeur de la propriété qui signifie rouge. Le style défini sous entend qu'il faut donc mettre la couleur des textes de la balise body en rouge. Si la valeur est composée de plusieurs mots, il serait mieux de le mettre entre guillemets comme dans cet exemple :</p>
+              <p>body
+                {
+                  font-family: "Times new roman"
+                }
+              </p>
+              <p>Un bloc peut contenir plusieurs déclarations. Dans ce cas, les déclarations sont obligatoirement séparées par des points virgules (;).</p>
+                <p>body{
+                  color:red ;
+                  font-family: "Times new roman";
+                  }
+                </p>
+                <p>Il est d'usage d'écrire les déclarations ligne par ligne. Sachant que c'est facultatif, il est tout à fait possible de les écrire sur la même ligne. C'est juste une question de lisibilité. On peut omettre le point virgule sur la dernière déclaration. Il vaut mieux quand même le mettre partout afin d'éviter les oublis.</p>
+                <p>Le CSS n'est pas sensible à la casse. C'est-à-dire que cela ne change rien si vous écrivez 'MENU', ou 'MeNu' au lieu de 'menu'. Cependant, il est plus convenable de tout écrire en minuscules.</p>
+
+                <h3>Les commentaires en CSS</h3>
+                <p>Il est très conseillé de mettre des commentaires dans votre code CSS. L'avantage de les mettre est qu'ils permettent à d'autres utilisateurs de comprendre votre code facilement en cas de travail en groupe par exemple. Sinon, c'est aussi dans votre intérêt personnel. Si vous décidez de reprendre le code après un long moment sans l'ouvrir, les commentaires vous aideront beaucoup à vous rafraîchir la mémoire.</p>
+                <p>De plus, les commentaires permettent de structurer le code et le rend plus lisible. Délimités par slash étoile et étoile slash, les commentaires ne sont pas interprétés par les navigateurs. Vous pouvez mettre tout ce que vous voulez dedans, ils n'apparaîtront pas sur l'écran. N'ayez donc aucune crainte, ils n'ont aucune influence sur l'affichage des contenus.</p>
+                <p>/*commentaire */</p>
+                <p>Par contre, il ne faut jamais les mettre en imbriqué comme suit :</p>
+                <p>/* commentaire
+                  /* encore un commentaire */
+                </p>
+
+            <footer>
+              <a href="chapitre2.html" id="suiv">Les principales propriétés  &gt;</a>
+              <a href="index.html" id="preced">&lt; Introduction</a>
+            </footer>
+          </section>
+
+
+
+
+
+
+      </div>
+
+  </body>
+</html>

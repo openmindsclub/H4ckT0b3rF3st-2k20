@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+      <a href="../../acceuil.html" ><i> Accueil</i></a>
+      <a href="../html/index.html"><i >HTML</i></a>
+      <a href="../css/index.html"><i >CSS</i></a>
+      <a href="idnex.html"><i>JavaScript</i></a>
+
+    </nav>
+
+<!--hada l menu li yji mel coté-->
+    <nav id="menuv">
+       <header>
+         <h3 style="text-align: center;">Contenu du cours</h3>
+       </header>
+       <li>
+         <a href="chapitre1.html">Les bases en JavaScript</a>
+       </li>
+       <li>
+         <a href="chapitre2.html">Variables et opérateurs</a>
+       </li>
+       <li>
+         <a href="chapitre3.html">Le DOM HTML</a>
+       </li>
+       <li>
+         <a href="chapitre4.html">Quiz</a>
+       </li>
+      </nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Variables et opérateur</h2>
+            </header>
+
+                <h3>Types de valeurs</h3>
+                <p>En langue Française, il existe plusieurs types de mots: les noms, les verbes, les adjectifs, les prénoms, etc…
+                De la même façon, en maths, on peut manipuler plusieurs types de valeurs: nombres entiers, décimaux, rationnels (fractions), complexes, etc…
+                En JavaScript, c’est pareil. Il est possible d’exprimer et de manipuler des valeurs de différents types.</p>
+                <h4>Types simples</h4>
+                <ul>
+                <li>booléen (boolean): true, false</li>
+                <li>nombre (integer/float number): 999, 0.12, -9.99</li>
+                <li>chaîne de caractères (string): 'coucou'</li>
+                <li>aucune valeur: null</li>
+                </ul>
+                <h4>Types avancés</h4>
+                <ul>
+                <li>non défini: undefined</li>
+                <li>objet (object): { prop: 'valeur' }</li>
+                <li>tableau (array): [ 1, 2, 3 ]</li>
+                <li>fonction (function): function(){ /* ... */ }</li>
+                </ul>
+
+
+                <h4>Opérateur d’affectation</h4>
+                <p>Comme en maths, l’opérateur d’affectation = permet d’affecter une valeur (à droite) à une variable (à gauche).</p>
+                <p>Par exemple, si on tape monNombre = 1 dans une console JavaScript, puis qu’on y tape monNombre, la console nous répondra 1 car c’est la valeur actuelle de la variable monNombre.</p>
+                <p>Chaque usage de l’opérateur d’affectation sur une variable changera sa valeur actuelle, quitte à remplacer la valeur qu’elle portait précédemment.</p>
+
+                <p>À noter que l’opérateur d’affectation se comporte différemment selon que la valeur affectée est de type simple (nombre, chaîne de caractères…) ou avancé (objet, tableau, fonction…):</p>
+                <ul>
+                <li>l’affectation d’une valeur de type simple dupliquera cette valeur dans la variable affectée;</li>
+                <li>alors qu’en affectant une valeur de type avancé, notre variable affectée sera en fait une référence à cette valeur.</li>
+                </ul>
+
+                <h4>Création de variable</h4>
+                <p>Dans nos exemples, les variables ont été créées automatiquement par la console JavaScript lors de leur première affectation de valeur.
+                Mais nous allons désormais créer nos variables de manière explicite, à l’aide du mot-clé var.</p>
+                <p>En effet, l’usage de var permet de s’assurer qu’on a pas déjà créé une variable du même nom.
+                Il est possible d’affecter une valeur à notre variable lors de sa création avec var.</p>
+                <p>Il restera évidemment possible d’affecter d’autres valeurs à notre variable, à l’aide de l’opérateur d’affectation, mais sans utiliser var ensuite.</p>
+                <p>Exemple:</p>
+                <p>// on va crééer une variable de type chaîne de caractères:</p>
+                <p>var maVariable = 'mon texte';</p>
+                <p>// => maVariable vaut 'mon texte'</p>
+                <p>maVariable = `mon nouveau texte`;</p>
+                <p>// => maVariable vaut désormais 'mon nouveau texte'</p>
+
+
+
+            <footer>
+              <a href="chapitre3.html" id="suiv">Le DOM HTML &gt;</a>
+                <a href="chapitre1.html" id="preced">&lt; Les bases en JavaScript</a>
+            </footer>
+          </section>
+
+
+
+
+
+
+      </div>
+
+  </body>
+</html>

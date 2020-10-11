@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <script type="text/javascript" src="../../Script/js.js"></script>
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+
+        <a href="../../acceuil.html" ><i> Accueil</i></a>
+        <a href="../html/index.html" ><i> HTML</i></a>
+        <a href="index.html"><i >CSS</i></a>
+        <a href="../js/index.html"><i >JavaScript</i></a>
+
+      </nav>
+
+<!--hada l menu li yji mel coté-->
+<nav id="menuv">
+ <header>
+   <h3 style="text-align: center;">Contenu du cours</h3>
+ </header>
+ <li>
+   <a href="chapitre1.html">Feuilles de style</a>
+ </li>
+ <li>
+   <a href="chapitre2.html">Les principales propriétés</a>
+ </li>
+ <li>
+   <a href="chapitre3.html">Dimensions et positions </a>
+ </li>
+ <li>
+   <a href="#">Quiz</a>
+ </li>
+</nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Quiz</h2>
+            </header>
+
+            <br><br>
+            <form name="ques">
+
+
+
+              <div class="qu">
+              <p>Que signifie CSS ?</p>
+              <span id="1"><input type="radio" name="A" value="1"   /> Cascading Style Sheets<br></span>
+              <span><input type="radio" name="A" value="0"  /> Create Simple Samples <br></span>
+              <span><input type="radio" name="A" value="0"  /> Choucroute et Saucisses d'Alsace <br></span>
+            </div>
+
+
+            <div class="qu">
+              <p>A quoi sert le langage CSS ?</p>
+              <span><input type="radio" name="B" value="0"  /> A réaliser des pages dynamiques<br></span>
+              <span id="2"><input type="radio" name="B" value="1"  /> A ajouter du style aux documents web <br></span>
+              <span><input type="radio" name="B" value="0"  /> A insérer du contenu dans une page internet <br></span>
+            </div>
+
+
+            <div class="qu">
+              <p>Pourquoi utilise-t-on généralement du CSS ?</p>
+              <span><input type="radio" name="C" value="0"  /> Pour se compliquer la vie bien sûr<br></span>
+              <span id="3"><input type="radio" name="C" value="1"  /> Pour séparer le contenu et la présentation des documents web <br></span>
+              <span><input type="radio" name="C" value="0"  /> Cela permet de faire de plus jolis dégradés de couleurs <br></span>
+            </div>
+
+
+            <div class="qu">
+              <p>Où est-il conseillé de placer le code CSS ?</p>
+              <span><input type="radio" name="D" value="0"  /> Dans le &lt;body&gt;, c'te question<br></span>
+              <span><input type="radio" name="D" value="0"  /> Entre les balises &lt;head&gt;, c'est bien plus propre <br></span>
+              <span id="4"><input type="radio" name="D" value="1"  /> Dans un fichier externe utilisable pour plusieurs pages <br></span>
+            </div>
+
+
+            <div class="qu">
+              <p>Dans quoi définit-on les déclarations CSS ?</p>
+              <span><input type="radio" name="E" value="0"  /> Entre deux crochets sépareés par des tirets [ ... - ... ]<br></span>
+              <span><input type="radio" name="E" value="0"  /> Entre deux guillemets séparées par des slashs " ... / ... " <br></span>
+              <span id="5"><input type="radio" name="E" value="1"  /> Entre deux accolades séparés par des points-virgules { ... ; ... } <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Dans la règle suivante, quel élément deviendra rouge ? strong#intro {background-color: red;}</p>
+              <input type="radio" name="F" value="0"  /> L'élément dont l'id est "intro" et qui est contenu dans un élément &lt;strong&gt;<br></span>
+              <span id="6"><input type="radio" name="F" value="1"  /> L'élément &lt;strong&gt; dont l'id est "intro" <br></span>
+              <span><input type="radio" name="F" value="0"  /> Tous les éléments &lt;strong&gt; contenus dans un élément dont l'id est "intro"<br></span>
+            </div>
+
+            <div class="qu">
+              <p>Quel élément sépare la propriété de sa valeur ?</p>
+              <span><input type="radio" name="G" value="0"  /> Le signe espace ( )<br></span>
+              <span><input type="radio" name="G" value="0"  /> Le signe égal (=)<br></span>
+              <span id="7"><input type="radio" name="G" value="1"  /> Le signe deux points (:)<br></span>
+            </div>
+
+
+            <div class="qu">
+              <p>Pourquoi est-il d'usage de sauter une ligne entre chaque déclaration ?</p>
+              <span><input type="radio" name="H" value="0"  /> Pour rien du tout<br></span>
+              <span><input type="radio" name="H" value="0"  /> Pour que le code soit bien interprété par les navigateurs<br></span>
+              <span id="8"><input type="radio" name="H" value="1"   /> Pour rendre le code plus lisible et la maintenance plus facile<br></span>
+            </div>
+
+            <div class="qu">
+              <p>A quoi sert le sélecteur de classe : h2.nomDeClasse ?</p>
+              <span><input type="radio" name="I" value="0"  /> Ah bon ... C'est censé servir à quelque chose ?<br></span>
+              <span><input type="radio" name="I" value="0"  /> A créer une ancre sur la balise &lt;h2&gt;<br></span>
+              <span id="9"><input type="radio" name="I" value="1"  /> A définir différentes propriétés pour l'élément &lt;h2&gt; dont la classe est "nomDeClasse".<br></span>
+            </div>
+
+            <div class="qu">
+              <p>Combien de règles peut contenir un fichier CSS ?</p>
+              <span id="10"><input type="radio" name="J" value="1"  /> Il n'y a pas de limite, on peut en créer autant que l'on veut<br></span>
+              <span><input type="radio" name="J" value="0"  /> Si le poids du fichier n'excède pas 20Ko, c'est tout bon<br></span>
+              <span><input type="radio" name="J" value="0"  /> 150<br></span>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <input  class="score" value="Résultat" id="res" onclick="Score(ques)" type="button">
+
+            </form>
+            <div id="sc">
+
+            </div>
+
+
+
+
+            <footer>
+
+                <a href="chapitre2.html" id="preced">&lt; Dimensions et positions</a>
+            </footer>
+          </section>
+
+      </div>
+
+  </body>
+</html>
