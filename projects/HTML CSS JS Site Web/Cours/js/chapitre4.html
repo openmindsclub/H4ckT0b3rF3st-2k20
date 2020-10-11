@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <script type="text/javascript" src="../../Script/js.js"></script>
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+      <a href="../../acceuil.html" ><i> Accueil</i></a>
+      <a href="../html/index.html"><i >HTML</i></a>
+      <a href="../css/index.html"><i >CSS</i></a>
+      <a href="index.html"><i>JavaScript</i></a>
+
+    </nav>
+
+<!--hada l menu li yji mel coté-->
+    <nav id="menuv">
+       <header>
+         <h3 style="text-align: center;">Contenu du cours</h3>
+       </header>
+       <li>
+         <a href="chapitre1.html">Les bases en JavaScript</a>
+       </li>
+       <li>
+         <a href="chapitre2.html">Variables et opérateurs</a>
+       </li>
+       <li>
+         <a href="chapitre3.html">Le DOM HTML</a>
+       </li>
+       <li>
+         <a href="#">Quiz</a>
+       </li>
+      </nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Quiz</h2>
+            </header>
+
+            <br><br>
+            <form name="ques">
+
+              <div class="qu">
+                 <p>Quel est le rapport entre Java et JavaScript?</p>
+                 <span><input type="radio" name="A" value="0"  /> C'est le même langage, mais le nom  JavaScript  est utilisé pour le code s'exécutant dans une page Web.<br></span>
+                 <span id="1"><input type="radio" name="A" value="1"  /> Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.<br></span>
+                 <span><input type="radio" name="A" value="0"  /> Java est une version améliorée de JavaScript.<br></span>
+                 <span><input type="radio" name="A" value="0"  /> Java est une île, ça n'a rien à voir !<br></span>
+               </div>
+
+               <div class="qu">
+                 <p>Laquelle de ces syntaxes est correcte?</p>
+                 <span id="2"><input type="radio" name="B" value="1"  /> if (a != 2) {}<br></span>
+                 <span><input type="radio" name="B" value="0"  /> if a != 2 {}<br></span>
+                 <span><input type="radio" name="B" value="0"  /> if (a <> 2) {}<br></span>
+                 <span><input type="radio" name="B" value="0"  /> if a <> 2 {}<br></span>
+               </div>
+
+               <div class="qu">
+                 <p>Quel attribut des noeuds de l'arbre DOM correspond à l'attribut (X)HTML class?</p>
+                 <span><input type="radio" name="C" value="0"  /> class<br></span>
+                  <span><input type="radio" name="C" value="0"  /> CLASS<br></span>
+                 <span id="3"><input type="radio" name="C" value="1"  /> className<br></span>
+                 <span><input type="radio" name="C" value="0"  /> kiwi<br></span>
+               </div>
+
+               <div class="qu">
+                 <p>Dans un fichier JavaScript externe (.js), il faut:</p>
+                 <span><input type="radio" name="D" value="0"  /> entourer le code avec les balises &lt;script&gt; et &lt;/script&gt;.<br></span>
+                 <span><input type="radio" name="D" value="0"  /> préciser l’encodage du fichier avec la règle @charset.<br></span>
+                 <span><input type="radio" name="D" value="0"  /> échapper les caractères spéciaux (X)HTML.<br></span>
+                 <span id="4"><input type="radio" name="D" value="1"  /> Aucune des réponses précédentes.<br></span>
+               </div>
+
+               <div class="qu">
+                 <p>Lequel de ces types d'événements n'existe pas?</p>
+                 <span><input type="radio" name="E" value="0"  /> blur<br></span>
+                 <span><input type="radio" name="E" value="0"  /> load<br></span>
+                 <span id="5"><input type="radio" name="E" value="1"  /> mouseclick<br></span>
+                 <span><input type="radio" name="E" value="0"  /> mouseout<br></span>
+               </div>
+
+               <div class="qu">
+                 <p>Quelle méthode n'existe pas dans le DOM?</p>
+                 <span><input type="radio" name="F" value="0"  /> document.getElementsByClassName<br></span>
+                 <span><input type="radio" name="F" value="0"  /> document.getElementsByTagName<br></span>
+                 <span id="6"><input type="radio" name="F" value="1"  /> document.getElementsByAttribute<br></span>
+                 <span><input type="radio" name="F" value="0"  /> document.getElementById<br></span>
+               </div>
+
+               <div class="qu">
+                 <p>Laquelle de ces propositions est un nom de variable valide en JavaScript?</p>
+                 <span><input type="radio" name="G" value="0"  /> var<br></span>
+                 <span><input type="radio" name="G" value="0"  /> 2a<br></span>
+                 <span><input type="radio" name="G" value="0"  /> NaN<br></span>
+                 <span id="7"><input type="radio" name="G" value="1"  /> $b<br></span>
+                 <span><input type="radio" name="G" value="0"  /> default<br></span>
+               </div>
+
+               <div class="qu">
+                 <p>Dans une boucle, l'instruction continue permet de:</p>
+                 <span><input type="radio" name="H" value="0"  /> continuer l'exécution du code après la boucle.<br></span>
+                 <span id="8"><input type="radio" name="H" value="1"  /> passer à l'itération suivante.<br></span>
+                 <span><input type="radio" name="H" value="0"  /> revenir au début de l'itération courante.<br></span>
+                 <span><input type="radio" name="H" value="0"  /> supprimer toutes les variables globales.<br></span>
+               </div>
+
+
+               <div class="qu">
+                 <p>var iNum = 12; iNum %= 2; A la suite de cette expression, combien vaut iNum ?</p>
+                 <span><input type="radio" name="I" value="0"  /> 6<br></span>
+                 <span><input type="radio" name="I" value="0"  /> 14<br></span>
+                 <span><input type="radio" name="I" value="0"  /> 0.12<br></span>
+                 <span id="9"><input type="radio" name="I" value="1"  /> 0<br></span>
+               </div>
+
+
+               <div class="qu">
+                 <p>Quelle méthode permet de comparer deux chaînes texte ?</p>
+                 <span><input type="radio" name="J" value="0"  /> charAt()<br></span>
+                 <span><input type="radio" name="J" value="0"  /> charCodeAt()<br></span>
+                 <span><input type="radio" name="J" value="0"  /> indexOf()<br></span>
+                 <span id="10"><input type="radio" name="J" value="1"  /> localeCompare()<br></span>
+               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <input  class="score" value="Résultat" id="res" onclick="Score(ques)" type="button">
+
+            </form>
+            <div id="sc">
+
+            </div>
+
+            <footer>
+
+                <a href="chapitre3.html" id="preced">&lt; Le DOM HTML</a>
+            </footer>
+          </section>
+
+
+
+
+
+
+      </div>
+
+  </body>
+</html>
