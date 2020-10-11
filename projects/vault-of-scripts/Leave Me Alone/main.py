@@ -1,12 +1,10 @@
-from fbchat import Client # pip install fbchat
-from fbchat.models import *
-from datetime import datetime, timedelta
-import time
 import random
+import time
+from datetime import datetime, timedelta
+from getpass import getpass
 
-# Credentials
-email = 'email' # Put your email here
-pwd = 'password' # Put your password here
+from fbchat import Client  # pip install fbchat
+from fbchat.models import *
 
 # Back listed users
 black_list = {
@@ -50,6 +48,9 @@ def AutoReply(client, user_id):
     return(reply)
 
 def main():
+    # Credentials
+    email = input("Your email address : ")
+    pwd = getpass("Your password : ");
     client = Client(email, pwd) # Connect client
     for user in black_list:
         user_id = GrabUserID(client, user) # Grab User ID
