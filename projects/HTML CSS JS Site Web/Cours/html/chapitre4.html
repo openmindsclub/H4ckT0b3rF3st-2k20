@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <script type="text/javascript" src="../../Script/js.js"></script>
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+
+        <a href="../../acceuil.html" ><i> Accueil</i></a>
+        <a href="index.html"><i > HTML</i></a>
+        <a href="../css/index.html"><i>CSS</i></a>
+        <a href="../js/index.html"><i >JavaScript</i></a>
+
+      </nav>
+
+  <!--hada l menu li yji mel coté-->
+  <nav id="menuv">
+     <header>
+       <h3 style="text-align: center;">Contenu du cours</h3>
+     </header>
+     <li>
+       <a href="chapitre1.html">Langage à balise</a>
+     </li>
+     <li>
+       <a href="chapitre2.html">Éléments HTML</a>
+     </li>
+     <li>
+       <a href="chapitre3.html">Les fomrulaires</a>
+     </li>
+     <li>
+       <a href="#">Quiz</a>
+     </li>
+    </nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Quiz</h2>
+            </header>
+            <br><br>
+            <form name="ques">
+
+
+            <div class="qu">
+              <p>Quel est le doctype d'un document HTML5 ?</p>
+              <span><input type="radio" name="A" value="0"  /> &lt;!DOCTYPE html5&gt; <br></span>
+              <span id="1"><input type="radio" name="A" value="1"  /> &lt;!DOCTYPE html&gt; <br></span>
+              <span><input type="radio" name="A" value="0"  /> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML5.0 Strict//EN"&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Quelle est la syntaxe pour déclarer l'encodage des caractères du document en UTF-8 ?</p>
+              <span><input type="radio" name="B" value="0"  /> &lt;meta encoding="text/html; charset=utf-8"&gt; <br></span>
+              <span><input type="radio" name="B" value="0"  /> &lt;meta charset="text/html; UTF-8"&gt; <br></span>
+                <span id="2"><input type="radio" name="B" value="1" /> &lt;meta charset="utf-8"&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Quelle nouvelle balise de section permet de regrouper un contenu tangentiel au contenu principal du document ?</p>
+              <span><input type="radio" name="C" value="0"  />  &lt;section id="sidebar"&gt;<br></span>
+              <span><input type="radio" name="C" value="0"  />&lt;sidebar&gt; <br></span>
+                <span id="3"><input type="radio" name="C" value="1"  /> &lt;aside&gt; <br></span>
+              <span>  <input type="radio" name="C" value="0"  /> &lt;details&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>La nouvelle balise &lt;time&gt; permet de baliser une date structurée. Quelle serait sa syntaxe pour le 1er avril 2012 à 13h37 ?</p>
+                <span id="4"><input type="radio" name="D" value="1"  /> &lt;time datetime="2012-04-01T13:37:00Z"&gt;&lt;/time&gt;<br></span>
+              <span><input type="radio" name="D" value="0"  /> &lt;time value="2012-04-01 13:37"&gt;&lt;/time&gt; <br></span>
+              <span><input type="radio" name="D" value="0"  />   &lt;time datetime="01/04/2012 13H37M00S"&gt;&lt;/time&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>À partir de quelle version d'Internet Explorer peut-on utiliser nativement les éléments de section HTML5 (sans hack ou script complémentaire) ?</p>
+              <span><input type="radio" name="E" value="0"  /> Internet Explorer 8<br></span>
+                <span id="5"><input type="radio" name="E" value="1"  /> Internet Explorer 9 <br></span>
+              <span><input type="radio" name="E" value="0"  />   Internet Explorer 10 <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Quelle est la méthode pour associer une légende complète à une illustration ?</p>
+              <span id="6"><input type="radio" name="F" value="1" />   &lt;figure&gt;&lt;img src="image.jpg"&gt;&lt;figcaption&gt;La légende...&lt;/figcaption&gt;&lt;/figure&gt;<br></span>
+              <span><input type="radio" name="F" value="0"  />&lt;figure src="image.jpg" legend="#cap1"&gt;&lt;/figure&gt;&lt;figcaption id="cap1"&gt;La légende...&lt;/figcaption&gt;<br></span>
+              <span><input type="radio" name="F" value="0"  />  &lt;figure&gt;&lt;legend&gt;La légende...&lt;/legend&gt;&lt;img src="image.jpg"&gt;&lt;/figure&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Comment représenter une barre de progression à 50% d'avancement ?</p>
+              <span id="7"><input type="radio" name="G" value="1"   />   &lt;progress value="50" max="100"&gt;50%&lt;/progress&gt;<br></span>
+              <span><input type="radio" name="G" value="0"  />&lt;input type="progress" value="0.5"&gt;50%&lt;/progress&gt;<br></span>
+              <span><input type="radio" name="G" value="0"  />  &lt;input type="progress" value="50" max="100" title="50%" /&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Comment associer une liste de choix/suggestions à un champ d'entrée texte ?</p>
+              <span><input type="radio" name="H" value="0"  />  &lt;input datalist="fruits"&gt;&lt;list id="fruits"&gt;&lt;option value="Kiwi"&gt;&lt;option value="Orange"&gt;&lt;option value="Mangue"&gt;&lt;/list&gt;<br></span>
+              <span id="8"> <input type="radio" name="H" value="1"  />&lt;input list="fruits"&gt;&lt;datalist id="fruits"&gt;&lt;option&gt;Kiwi&lt;/option&gt;&lt;option&gt;Orange&lt;/option&gt;&lt;option&gt;Mangue&lt;/option&gt;&lt;/datalist&gt;<br></span>
+              <span><input type="radio" name="H" value="0"  /> &lt;input list="fruits"&gt;&lt;select&gt;&lt;datalist id="fruits" values="Kiwi,Orange,Mangue" /&gt;&lt;/select&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Quel attribut permet d'afficher une image par défaut pour l'élément &lt;video&gt; ?</p>
+              <span><input type="radio" name="I" value="0"  />  &lt;video preview="apercu.jpg"&gt;<br></span>
+               <span><input type="radio" name="I" value="0"  />  &lt;video&gt;&lt;param name="thumbnail" value="apercu.jpg" /&gt;&lt;/video&gt;<br></span>
+              <span id="9"><input type="radio" name="I" value="1"  /> &lt;video poster="apercu.jpg"&gt; <br></span>
+            </div>
+
+            <div class="qu">
+              <p>Quelle balise doit permettre l'inclusion de sous-titres textes dans les vidéos lues avec &lt;video&gt; ?</p>
+              <span id="10"><input type="radio" name="J" value="1"  />    &lt;track src="soustitres.vtt"&gt;<br></span>
+              <span><input type="radio" name="J" value="0"  />    &lt;subtitle source="soustitres.srt"&gt;<br></span>
+              <span><input type="radio" name="J" value="0"  />   &lt;captions source="soustitres.srt"&gt; <br></span>
+            </div>
+
+
+            <input  class="score" value="Résultat" id="res" onclick="Score(ques)" type="button">
+
+            </form>
+            <div id="sc">
+
+            </div>
+
+
+            <footer>
+
+                <a href="chapitre3.html" id="preced">&lt; Les fomrulaires</a>
+            </footer>
+          </section>
+
+
+
+
+
+
+      </div>
+
+  </body>
+</html>
