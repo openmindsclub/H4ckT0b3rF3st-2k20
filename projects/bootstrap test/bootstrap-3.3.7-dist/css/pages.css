@@ -1,0 +1,115 @@
+/* About */
+
+.breadcrumb-holder{
+	background-color: #f5f5f5;
+	margin-top: 70px;
+	height: 44px;
+    line-height: 28px;
+}
+
+.breadcrumb{
+	margin-left: -15px;
+}
+.intro{
+	padding: 50px 0;
+}
+
+.intro h1{
+	letter-spacing: -3px;
+	font-weight: 900;
+	font-size: 50px
+}
+
+.intero hr{
+	width: 70%;
+}
+
+.about_feat{
+	padding: 0 0 70px;
+	
+}
+
+.about_feat h3{
+	font-weight: 900;
+	letter-spacing: -1px
+}
+
+.about_feat p{
+	margin-bottom: 30px;
+}
+
+.Moderateur{
+	background: #eee;
+	margin-top: 10px;
+}
+
+.Moderateur h2{
+	font-weight: 900;
+}
+
+.Moderateur p{
+	line-height: 1.6
+}
+
+.Moderateur a{
+	margin-bottom: 30px;
+}
+
+/* end About */
+
+/* start FAQ */
+
+
+.faq-intero{
+	padding: 40px 0;
+}
+.faq-intero h1{
+	
+	font-family: allan;
+	font-weight: 900;
+	font-size: 60px;
+	letter-spacing: -3px
+}
+
+.faq-intero h1 ~ hr {
+	width: 70%;
+	border-color: black;
+}
+
+.faq-question{
+	margin-bottom: 40px;
+}
+
+
+
+.panel-default > .panel-heading {
+	background: linear-gradient(to right,  powderblue 0%,powderblue 50%,white 100%);
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.panel-default > .panel-heading a:after{
+	content: "\e259";
+	font-family: "glyphicons halflings";
+	float: right;
+}
+
+.panel-default > .panel-heading a.collapsed:after{
+	content: "\e260";
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* end FAQ */
