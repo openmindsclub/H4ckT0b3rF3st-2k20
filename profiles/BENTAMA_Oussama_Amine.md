@@ -4,7 +4,7 @@
 Algiers/Algeria
 
 ### Academics
-1st year master software engineering
+1st year master software engineering at University of Sciences and Technology Houari Boumediene (USTHB)
 
 ### Interests
 * Learning
