@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+
+        <a href="../../acceuil.html" ><i> Accueil</i></a>
+        <a href="../html/index.html" ><i> HTML</i></a>
+        <a href="index.html"><i >CSS</i></a>
+        <a href="../js/index.html"><i >JavaScript</i></a>
+
+      </nav>
+
+<!--hada l menu li yji mel coté-->
+<nav id="menuv">
+ <header>
+   <h3 style="text-align: center;">Contenu du cours</h3>
+ </header>
+ <li>
+   <a href="chapitre1.html">Feuilles de style</a>
+ </li>
+ <li>
+   <a href="chapitre2.html">Les principales propriétés</a>
+ </li>
+ <li>
+   <a href="chapitre3.html">Dimensions et positions </a>
+ </li>
+ <li>
+   <a href="chapitre4.html">Quiz</a>
+ </li>
+</nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Les principales propriétés </h2>
+            </header>
+
+            <h3>Mettre des textes en majuscules et minuscules</h3>
+            <p>Les propriétés CSS permettent de mettre automatiquement des textes en majuscules dans un texte. Pour cela, il y a 2 sortes de propriétés.</p>
+            <p>Premièrement, voyons la propriété font-variant. Elle peut prendre 2 valeurs différentes :</p>
+            <ul>
+              <li>small-caps qui donnera un texte en petites majuscules</li>
+              <li>normal qui est la valeur par défaut et donnera un texte normal</li>
+            </ul>
+            <p>p.normale {
+            font-variant: normal;
+            }
+            </p>
+            <p>p.petite {
+            font-variant: small-caps;
+            }
+            </p>
+            <p>Il y a aussi une autre propriété CSS qui permet de forcer les majuscules: text-transform d'un texte. Elle peut prendre ces valeurs :</p>
+            <ul>
+              <li>none : ne met aucun effet sur le texte</li>
+              <li>lowercase : met toutes les lettres de chaque mot en minuscules</li>
+              <li>uppercase : met toutes les lettres de chaque mot en majuscules</li>
+              <li>capitalize : met uniquement la première lettre de chaque mot en majuscule</li>
+            </ul>
+
+                          <p>.aucun {
+              text-transform:none;
+            }</p>
+
+              <p>.minuscule {
+              text-transform: lowercase;
+            }</p>
+
+              <p>.majuscule {
+              text-transform: uppercase;
+            }</p>
+
+              <p>.capitale {
+              text-transform: capitalize;
+            }</p>
+
+            <h3>Centrer, aligner et justifier des textes en CSS</h3>
+            <p>L'alignement des textes en CSS est défini par la propriété 'text-align'.Cette propriété peut prendre différentes valeurs selon l'alignement souhaité : La valeur left correspond à l'alignement à gauche et c'est la valeur par défaut.</p>
+            <p>L'autre valeur right correspond à l'alignement à droite. Avec la valeur center, le texte sera centré. La valeur justify permet de justifier le texte. La justification consiste à faire en sorte que le texte occupe toute la largeur possible, et qu'il soit aligné aussi bien à droite qu'à gauche. Pour retenir facilement, voici en résumé les différentes valeurs et leur signification:</p>
+            <ul>
+              <li>left : aligner à gauche</li>
+              <li>right : aligner à droite</li>
+              <li>center : centrer</li>
+              <li>justify : justifier</li>
+            </ul>
+              <p>h1 {
+              text-align: center; /* centré */
+            }</p>
+
+              <p>.justifie {
+              text-align: justify; /* justifiée */
+            }</p>
+
+              <p>.gauche {
+              text-align: right; /*aligné à gauche*/
+            }</p>
+            <p>Il n'est pas possible de modifier l'alignement d'un texte d'une balise in line telles qu'em, strong, etc. L'alignement ne concerne que les types block. Cela n'a rien de vraiment étrange, c'est juste une question de logique. Modifier l'alignement d'un mot qui se trouve au milieu d'un paragraphe n'a aucun sens logique.</p>
+
+            <h4>Alignement vertical</h4>
+            <p>Comme son nom l'indique, la propriété vertical-align permet de définir le positionnement vertical d'un texte par rapport à un élément de type in-line. En général, elle ne bénéficie pas des règles d'héritage. On trouve l'intérêt de cette propriété particulièrement dans la manipulation des cellules d'un tableau. Cependant, la propriété pose un problème sur certains navigateurs comme IE6 par exemple. Différentes valeurs possibles sont proposées dans la liste suivante :</p>
+            <ul>
+              <li>super : place le texte en dessus de l'élément parent comme un exposant</li>
+              <li>top : Le sommet du texte est aligné sur celui du plus haut de l'élément de référence</li>
+              <li>middle : Le milieu du texte s'aligne au milieux de l'élément parent</li>
+              <li>baseline : C'est la valeur par défaut et elle indique la position normale. Elle respecte l'alignement à gauche et place le texte au même niveau que l'élément in-line de référence</li>
+              <li>bottom : La partie inférieure du texte est alignée sur celle du plus bas de l'élément de référence</li>
+              <li>sub : Le texte est placé en dessous de l'élément parent comme un indice</li>
+            </ul>
+           <p>Et il y a aussi deux autres valeurs : text-top et text-bottom. Les deux sont similaires respectivement à top et bottom et ils donnent des résultats très fins.</p>
+           <p>p {
+            font-size:36px;
+            text-decoration:underline; /* souligné*/
+          }</p>
+
+            <p>.petit {
+            font-size:9px; }</p>
+
+            <p>.exposant {
+            vertical-align:super;
+          }</p>
+
+            <p>.haut {
+            vertical-align:top;
+          }</p>
+
+            <p>.milieu {
+            vertical-align:middle;
+          }</p>
+
+            <p>.normal {
+            vertical-align:baseline;
+          }</p>
+
+            <p>.bas {
+            vertical-align:bottom;
+          }</p>
+
+            <p>.indice {
+
+            vertical-align:sub;
+          }</p>
+
+          <p>Dans notre exemple, on a mis un texte de 36px comme référence, et un texte en plus petit pour montrer chaque position. Les propriétés définissent alors selon leur valeur chacune des positions du texte en petite taille par rapport au grand.</p>
+
+          <h3>Gestion des couleurs en CSS</h3>
+          <p>Faisons encore quelque chose de plus joli avec le CSS, utilisons les couleurs. Déjà, il vous vient très certainement à l'esprit, l'idée de vouloir colorer des textes. Comment faire ? Il y a juste à suivre une syntaxe très simple. Utiliser la propriété color et indiquer la valeur de la couleur.</p>
+          <p>h3 {
+            color : blue ;
+            }
+            </p>
+          <p>Seulement, il y a différentes façons d'indiquer les couleurs en CSS. Il nous sera très utile de savoir comment ça marche alors allons-y. Voyons tout de suite la méthode la plus simple : la définition par mots clés.</p>
+
+          <h4>Couleur et mots-clés</h4>
+          <p>Il existe 17 couleurs qui peuvent être nommées directement par leur nom anglais. Ce sont ces noms là qu'on appellera ici mots-clés. Ces mots-clés correspondent à une couleur bien précise, désignée entre parenthèses :</p>
+          <table>
+            <tr>
+              <td>maroon ( #800000 )</td>
+            </tr>
+            <tr>
+              <td>red ( #ff0000 )</td>
+            </tr>
+            <tr>
+              <td>orange ( #ffA500 )</td>
+            </tr>
+            <tr>
+              <td>yellow ( #ffff00 )</td>
+            </tr>
+            <tr>
+              <td>olive ( #808000 )</td>
+            </tr>
+            <tr>
+              <td>purple ( #800080 )</td>
+            </tr>
+            <tr>
+              <td>fuchsia ( #ff00ff )</td>
+            </tr>
+            <tr>
+              <td>white ( #ffffff )</td>
+            </tr>
+            <tr>
+              <td>lime ( #00ff00 )</td>
+            </tr>
+            <tr>
+              <td>green ( #008000 )</td>
+            </tr>
+            <tr>
+              <td>navy ( #000080 )</td>
+            </tr>
+            <tr>
+              <td>blue ( #0000ff )</td>
+            </tr>
+            <tr>
+              <td>aqua ( #00ffff )</td>
+            </tr>
+            <tr>
+              <td>teal ( #008080 )</td>
+            </tr>
+            <tr>
+              <td>black ( #000000 )</td>
+            </tr>
+            <tr>
+              <td>silver ( #c0c0c0 )</td>
+            </tr>
+            <tr>
+              <td>gray ( #808080 )</td>
+            </tr>
+          </table>
+
+          <p>Dans la liste ci-dessus, on voit à côté de chaque mot-clé, la notation hexadécimale des couleurs. Ces valeurs là sont utilisées aussi pour définir des couleurs. Et surtout pour les couleurs qui ne peuvent pas être spécifiées par leur nom anglais.</p>
+
+          <p>Il s'agit de la notation hexadécimale. C'est une combinaison de lettres et de chiffres qui indiquent une couleur. Elle est composée de 6 caractères qui contiennent des lettres de 0 à 9 ou des chiffres de A à F. Ces caractères sont toujours précédés du signe #.</p>
+
+          <p>Ces lettres ou chiffres fonctionnent deux par deux. Les 2 premiers indiquent une quantité de rouge, les 2 suivants une quantité de vert, et les 2 derniers une quantité de bleu. En effet, toute couleur est issue de la combinaison des 3 couleurs de base : rouge, vert et bleu. En mélangeant une quantité de chacune de ces composantes on peut obtenir la couleur que l'on désire.</p>
+          <p>h1 {
+            color : #ffA500;
+            }
+            </p>
+
+            <h4>Code couleur RGB</h4>
+            <p>Il y a aussi une autre annotation des couleurs qui est le RGB. Cela consiste à définir les couleurs avec des valeurs décimales comprises entre 0 et 255. Sachant que R signifie Red, G signifie Green et B signifie Blue (respectivement 'rouge', 'vert', 'bleu'). La première valeur dans la notation RGB est celle des composantes rouges de la couleur</p>
+            <p>La seconde valeur spécifie la teneur des couleurs vertes dans la couleur désirée. Et la troisième, est la valeur des composantes bleues dans la couleur en question.</p>
+            <p>Si vous voulez que le texte de l'élément p soit en bleu, vous noterez :</p>
+            <p>p {
+            color : rgb(0,0,255) ;
+            }
+            </p>
+
+            <h3>Gérer le fond (background) en CSS</h3>
+            <p>En CSS, il est possible non seulement de mettre un fond sur une page web mais aussi de mettre des fonds sur une partie de la page (les titres, les paragraphes, etc.) Les propriétés pour les fonds sont généralement précédées du mot background. On peut mettre comme fond une couleur mais aussi une image.</p>
+            <h4>La couleur de fond</h4>
+            <p>La propriété background-color sert à mettre une couleur de fond. Pour mettre un fond vert sur toute la page web par exemple, on utilise des styles dans la balise body.</p>
+            <p>body {
+            background-color: green; /* fond de page en vert
+            color: black; /* couleur du texte en noir */
+            }
+            </p>
+
+            <h4>Les images de fond</h4>
+            <p>La propriété background-image nous permet de placer une image en fond de la page ou en fond de texte d'un ou plusieurs éléments. Il suffit de spécifier une image d'arrière-plan en indiquant son chemin. Pour une image fond.jpg se trouvant dans un répertoire image du site, on aura donc :</p>
+            <p>body {
+            background-image: url("image/fond.jpg");
+            }
+            </p>
+
+
+
+            <footer>
+              <a href="chapitre3.html" id="suiv">Dimensions et positions &gt;</a>
+              <a href="chapitre1.html" id="preced">&lt; Feuilles de style</a>
+            </footer>
+          </section>
+
+
+
+
+
+
+      </div>
+
+  </body>
+</html>
