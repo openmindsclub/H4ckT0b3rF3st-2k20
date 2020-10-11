@@ -10,5 +10,9 @@
 
 #### [melissa-hmdn](https://github.com/melissa-hmnd)
 
+#### [BouchraGB](https://github.com/BouchraGB)
+
+#### [Mammasse-Amine](https://github.com/MammasseAmine)
+
 #### [OussamaAmine](https://github.com/OussamaAmine)
 
