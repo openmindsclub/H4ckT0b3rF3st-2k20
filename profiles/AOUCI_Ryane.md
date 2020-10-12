@@ -1,5 +1,5 @@
-# Your Full Name
-Ryane AOUCI
+# Ryane AOUCI
+
 ### Location
 Algiers, Algeria
 ### Academics
