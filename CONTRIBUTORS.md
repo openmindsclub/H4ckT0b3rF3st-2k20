@@ -29,3 +29,5 @@
 #### [Abdelhak2406](https://github.com/abdelhak2406)
 
 #### [Ikonora](https://github.com/Ikonora)
+
+#### [AdityaRajSingh](https://github.com/AdityaRajSingh)
