@@ -8,7 +8,7 @@ Add a Your_Full_Name.md file to this directory. Use any combination of content a
 *Btna, Algeria*
 
 ### Academics
-*A second year computer science enginering at USTHB*
+*A second year computer science enginering student at USTHB*
 
 ### Interests
 * Things you like : wathing tv shows, Anime and movies.
