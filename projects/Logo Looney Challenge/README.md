@@ -1,5 +1,5 @@
 # Logo Looney Challenge
-This is a creative project where you are free to recreate a logo for OpenMindsClub depending on a theme of your choosing. You have a deadline until september to submit your design, where our audience on social media will get to decide which logo is the more creative amongst those of the participants. All clear? Show us your talent!
+This is a creative project where you are free to recreate a logo for OpenMindsClub depending on a theme of your choosing. You have a deadline until end of October to submit your design, where our audience on social media will get to decide which logo is the more creative amongst those of the participants. All clear? Show us your talent!
 
 ![Project logo](https://www.pixenli.com/image/cGivbxHg)
 

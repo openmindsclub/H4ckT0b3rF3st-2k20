@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+
+        <a href="../../acceuil.html" ><i> Accueil</i></a>
+        <a href="../html/index.html" ><i> HTML</i></a>
+        <a href="index.html"><i >CSS</i></a>
+        <a href="../js/index.html"><i >JavaScript</i></a>
+
+      </nav>
+
+<!--hada l menu li yji mel coté-->
+<nav id="menuv">
+ <header>
+   <h3 style="text-align: center;">Contenu du cours</h3>
+ </header>
+ <li>
+   <a href="chapitre1.html">Feuilles de style</a>
+ </li>
+ <li>
+   <a href="chapitre2.html">Les principales propriétés</a>
+ </li>
+ <li>
+   <a href="chapitre3.html">Dimensions et positions </a>
+ </li>
+ <li>
+   <a href="chapitre4.html">Quiz</a>
+ </li>
+</nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Dimensions et positions </h2>
+            </header>
+
+            <h3>Les marges</h3>
+            <p>Avant de commencer, notons bien tout d'abord que deux notions de marges seront abordées dans ce chapitre :</p>
+            <ul>
+              <li>La marge externe définit l'espace entre le bloc et son extérieur</li>
+              <li>La marge interne définit l'espace entre le bloc et son contenu</li>
+            </ul>
+            <p>Notons également qu'un bloc désigne un élément de type bloc comme le paragraphe, les div, etc.</p>
+
+            <h4>Les marges externes avec margin</h4>
+            <p>La "marge externe" est la zone "margin". D'où le nom de la propriété : MARGIN. Cette dernière spécifie d'un coup la valeur de la marge pour les quatre côtés à la fois. On peut mettre comme valeur une longueur pour définir une largeur fixe. Il est aussi possible de mettre un pourcentage.</p>
+            <p>.margin {margin: 4cm;}</p>
+            <p>S'il y a deux valeurs, alors la première valeur s'applique pour la marge du haut et celle du bas, et la seconde pour la marge droite et celle de gauche.</p>
+            <p>/*retrait haut+bas et droite+gauche*/
+            .margin{ margin : 3cm 10cm ; }</p>
+
+            <h4>Les marges internes avec padding</h4>
+            <p>Le principe reste le même que tout à l'heure sauf qu'à la place de margin, on utilise padding. Le padding est une zone, appelée aussi "marge interne" ou "intervalle". Elle est utilisée pour entourer de marge le "contenu" à l'aide de 4 valeurs. Concrètement, ça sert à définir une distance entre le contenu d'une boîte et la bordure de ce dernier.</p>
+            <p>.padding {
+            border: solid 2px #990000;
+            padding: 50px;
+            width: 350px;
+            text-align: justify;
+            }
+            </p>
+
+            <p>Il en est de même pour les marges internes. On a pu définir à la fois le retrait en haut, en bas, à gauche et à droite grâce à la propriété margin ou padding. Une autre façon serait aussi de les définir séparément. Il suffit de rajouter les mots clé 'top, bottom, left, right' aux margin ou aux padding.</p>
+            <p>Liste des propriétés de margin</p>
+            <ul>
+              <li>margin-top : marge extérieure en haut</li>
+              <li>margin-bottom : marge extérieure en bas</li>
+              <li>margin-left : marge extérieure à gauche</li>
+              <li>margin-right : marge extérieure à droite</li>
+
+            </ul>
+
+            <p>Liste des propriétés de padding</p>
+            <ul>
+              <li>margin-top : marge extérieure en haut</li>
+              <li>margin-bottom : marge extérieure en bas</li>
+              <li>margin-left : marge extérieure à gauche</li>
+              <li>margin-right : marge extérieure à droite</li>
+
+            </ul>
+
+            <h3>Positionnement absolu, fixe et relatif</h3>
+            <p>La propriété CSS position permet de changer le comportement d'affichage des blocs. La valeur par défaut de cette propriété est static qui définit l'affichage normal. Mais nous nous pencherons plutôt vers les autres propriétés qui s'avèrent intéressantes :</p>
+            <ul>
+              <li>position:relative;</li>
+              <li>position:absolute;</li>
+              <li>position:fixed;</li>
+
+            </ul>
+
+            <h4>Positionnement relatif</h4>
+            <p>On a dit que le flux définit l'ordre d'affichage par défaut des éléments. En positionnant de façon relative un élément, on ne le retire pas du flux. Il suit toujours la règle normale des positionnements. En mettant position:relative ; l'élément se déplace simplement par rapport à sa position normale.</p>
+
+            <h4>Positionnement absolu</h4>
+            <p>Avec le positionnement absolu, l'élément est détaché complètement du flux. Sa position n'est plus définie par rapport à la normale. Si la page est considérée comme une sorte de repère, l'élément sera placé par rapport à ce repère suivant les coordonnées définies. Les propriétés bottom, left, right ou top définiront ses positions </p>
+
+            <h4>Positionnement Fixed</h4>
+            <p>La propriété position:fixed pourrait nous être avantageuse dans certains cas. Un petit rappel, comme d'habitude : quand nous avons étudié les fond, le background-attachment:fixed nous a permis de ne pas bouger le fond même si on fait défiler la page. L'idée du positionnement fixe est identique.</p>
+
+
+            <footer>
+              <a href="chapitre4.html" id="suiv">Quiz &gt;</a>
+              <a href="chapitre2.html" id="preced">&lt; Les principales propriétés</a>
+            </footer>
+          </section>
+
+
+
+
+
+
+      </div>
+
+  </body>
+</html>
