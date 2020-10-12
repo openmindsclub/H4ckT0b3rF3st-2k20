@@ -107,6 +107,7 @@ There are plenty of empty projects in the repo, read the README.md file in of th
 Go to the issues section by clicking on the `Issues` button on the top of the page and try to solve one of the issues.
 
 ### 6. Add your own project
+
 You have an idea and you wanna make it happen? start coding and push your project to the `/projects` directory in the repo.
 
 ## HAVE A SPOOKY FEST !
