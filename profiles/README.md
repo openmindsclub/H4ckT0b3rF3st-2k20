@@ -12,7 +12,7 @@ Add a Your_Full_Name.md file to this directory. Use any combination of content a
 
 ### Interests
 * Things you like : wathing tv shows, Anime and movies.
-* Hobbies : calligraphy, drawing.
+* Hobbies : calligraphy, drawing, photography
 
 ### Skills
 * Programmer
