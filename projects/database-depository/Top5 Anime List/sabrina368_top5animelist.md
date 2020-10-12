@@ -9,7 +9,7 @@ And under the care of the woman they refer to as "Mama," all the kids have enjoy
 Good food, clean clothes and the perfect environment to learn then though, Emma and Norman uncover the dark and twisted truth of the outside world <br/>
  and they plan their escape <br/>
 
-### hunterxhunter #2 (62 eps):  
+### Hunterxhunter #2 (62 eps):  
 * **Status:** Completed<br/> 
 * **Studio:** Nippon animation <br/>
 * **Genre:** fantasy, adventure, martial arts <br/><br/> 
@@ -21,7 +21,7 @@ that he is still alive and has since become an accomplished Hunter, <br/>
 Gon leaves his home on Whale Island to take the Hunter Examination<br/>
 in order to become a Hunter like him <br/>
 
-### attack on titans #3 (59 eps):  
+### Attack on titans #3 (59 eps):  
 * **Status:** not completed <br/> 
 * **Studio:** wit studio , mappa, production, I.G <br/>
 * **Genre:** dark fantasy, action <br/><br/> 
@@ -31,7 +31,7 @@ the story follows Eren Yeager, who vows to retake the world after a <br/>
 Titan brings about the destruction of his home town and the death of his mother<br/>
 
 
-### de stone #4 (24 eps):  
+### Dr stone #4 (24 eps):  
 * **Status:** Completed <br/> 
 * **Studio:** TMS/8PAN <br/>
 * **Genre:**  Adventure, Post-apocalyptic, Science fiction <br/><br/> 
@@ -40,7 +40,7 @@ A 16-year-old genius named Senkū Ishigami is suddenly revived to find himself i
 been eroded by time. Senkū sets up a base-camp and begins to study the petrified humans in order to determine the cause of the event,<br/>
 as well as a cure. 
 
-### kimetsu no yaiba #5 (26 eps):  
+### Kimetsu no yaiba #5 (26 eps):  
 * **Status:** Completed <br/> 
 * **Studio:** Ufotable <br/>
 * **Genre:** Adventure, dark fantasy, martial arts <br/><br/> 
