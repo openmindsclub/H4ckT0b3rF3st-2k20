@@ -1,0 +1,17 @@
+aniso8601==8.0.0
+click==7.1.2
+flake8==3.8.4
+Flask==1.1.2
+Flask-RESTful==0.3.8
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+mccabe==0.6.1
+pycodestyle==2.6.0
+pyflakes==2.2.0
+pytube==9.6.0
+pytube3==9.6.4
+pytz==2020.1
+six==1.15.0
+typing-extensions==3.7.4.3
+Werkzeug==1.0.1
