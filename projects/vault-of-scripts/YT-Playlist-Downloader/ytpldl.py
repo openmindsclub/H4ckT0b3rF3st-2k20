@@ -15,6 +15,8 @@ class YouTubePlaylistDownloader():
         logging.info(f"[+] Number of tracks: {len(self.urls)}")
 
     def download_a_track(self, yt_instance, offset=1):
+        ''' Download a single track '''
+
         logging.info(f"[+] {offset}. Downloading {yt_instance.title}")
 
         try:
@@ -30,19 +32,26 @@ class YouTubePlaylistDownloader():
             logging.error(f'[-] {offset}. Encountered Error {e}')
 
     def download(self, offset=None):
+        ''' Either download one track using it's offset, or download all the tracks '''
+
         if not offset:
             for n, url in enumerate(self.urls):
                 self.download_a_track(YouTube(url), n)
         else:
             self.download_a_track(YouTube(self.urls[offset]), offset)
 
-    def get_download_details(self, offset):
-        target = YouTube(self.urls[offset])
+    def get_download_details(self, offset=0, track_url=None):
+        ''' Return the download url, title and thumbnail of a track '''
+
+        url = track_url if track_url else self.urls[offset]
+
+        target = YouTube(url)
         data = {
             'title': target.title,
             'download_url': target.streams.get_highest_resolution().url,
             'thumbnail': target.thumbnail_url
         }
+
         return data
 
 

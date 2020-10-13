@@ -11,6 +11,7 @@ api = Api(app)
 class YTPlaylistDownloadAPI(Resource):
 
     def post(self):
+        ''' Yield a download URL for a certain track '''
         data = request.get_json()
         if 'playlist_url' not in data.keys() or 'offset' not in data.keys():
             return 'The request must include a playlist_url and an offset', 400
@@ -33,12 +34,18 @@ class YTPlaylistDownloadAPI(Resource):
 class YTPlaylistLength(Resource):
 
     def post(self):
+        ''' Yield the length of the playlist, to be used by the app to check if a certain
+            playlist URL is valid, if length !=0 then the URL is valid, unvalid if not
+        '''
+
         data = request.get_json()
         logging.info(data['playlist_url'])
+
         if 'playlist_url' not in data.keys():
             return 'The request must include a playlist_url', 400
 
         downloader = YouTubePlaylistDownloader(data['playlist_url'])
+
         return {'length': len(downloader.urls)}
 
 
