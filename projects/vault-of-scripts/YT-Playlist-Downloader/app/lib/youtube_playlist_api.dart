@@ -37,4 +37,18 @@ class YoutubePlaylistAPI {
     if (r.statusCode == 400) return null;
     return jsonDecode(r.body);
   }
+
+  Future<Map> getSingleTrack() async {
+    Response r = await post(
+      '$apiEndpoint/track',
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode(<String, String>{
+        'track_url': this.url,
+      }),
+    );
+
+    return jsonDecode(r.body);
+  }
 }

@@ -14,11 +14,13 @@ class PlaylistDownload extends StatefulWidget {
 
 class _PlaylistDownloadState extends State<PlaylistDownload> {
   Map data = {};
+  Map trackData;
   YoutubePlaylistAPI api;
   int length;
   List<Map> tracks = [];
   bool syncStarted = false;
   bool gotPermission = false;
+  bool isTrack;
 
   void getTracks() async {
     Map data;
@@ -38,17 +40,29 @@ class _PlaylistDownloadState extends State<PlaylistDownload> {
     }
   }
 
-  Future<void> downloadFile(uri, fileName, index) async {
+  Future<void> downloadFile(
+      String uri, String fileName, int index, bool isMp3) async {
     if (await Permission.storage.request().isGranted &&
         !this.tracks[index]['downloaded'] &&
         !this.tracks[index]['is_downloading']) {
-      String savePath = await getFilePath(fileName);
+      String savePath = await getFilePath(fileName, isMp3);
       print('Download path is: $savePath');
+
       Dio dio = Dio();
+
       this.tracks[index]['is_downloading'] = true;
 
+      Map<String, String> queryData = {};
+      String targetUrl = uri;
+      if (isMp3) {
+        queryData = {
+          'download_url': uri,
+        };
+        targetUrl = '${this.api.apiEndpoint}/convert';
+      }
+
       await dio.download(
-        uri,
+        targetUrl,
         savePath,
         onReceiveProgress: (rcv, total) {
           //print('received: ${rcv.toStringAsFixed(0)} out of total: ${total.toStringAsFixed(0)}');
@@ -62,6 +76,7 @@ class _PlaylistDownloadState extends State<PlaylistDownload> {
           });
         },
         deleteOnError: true,
+        queryParameters: queryData,
       ).then((_) {
         setState(() {
           this.tracks[index]['is_downloading'] = false;
@@ -73,17 +88,12 @@ class _PlaylistDownloadState extends State<PlaylistDownload> {
     }
   }
 
-  Future<String> getFilePath(uniqueFileName) async {
+  Future<String> getFilePath(String uniqueFileName, bool isMp3) async {
     String path;
     Directory downloadDirectory = await getExternalStorageDirectory();
 
-    //try {
-    //  downloadDirectory = await DownloadsPathProvider.downloadsDirectory;
-    //} on PlatformException {
-    //  print('Could not get the downloads directory');
-    //}
-
-    path = '${downloadDirectory.path}/$uniqueFileName.mp4';
+    String extension = isMp3 ? 'mp3' : 'mp4';
+    path = '${downloadDirectory.path}/$uniqueFileName.$extension';
 
     return path;
   }
@@ -93,8 +103,18 @@ class _PlaylistDownloadState extends State<PlaylistDownload> {
     this.data = ModalRoute.of(context).settings.arguments;
     this.api = YoutubePlaylistAPI(url: this.data['playlist_url']);
     this.length = data['length'];
+    this.isTrack = data['isTrack'];
+    this.trackData = data['trackData'];
 
-    if (!this.syncStarted) this.getTracks();
+    if (!this.syncStarted && !this.isTrack) this.getTracks();
+
+    if (this.isTrack && this.tracks.length == 0) {
+      this.trackData['progress'] = 0.0;
+      this.trackData['progress_indicator'] = ' ';
+      this.trackData['downloaded'] = false;
+      this.trackData['is_downloading'] = false;
+      this.tracks.add(this.trackData);
+    }
 
     return Scaffold(
       appBar: AppBar(
@@ -109,9 +129,13 @@ class _PlaylistDownloadState extends State<PlaylistDownload> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                    'Number of Loaded Tracks: ${this.tracks.length} / ${this.length}'),
+                  'Number of Loaded Tracks: ${this.tracks.length} / ${this.length}',
+                ),
+                SizedBox(
+                  height: 15,
+                ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     RaisedButton(
                       onPressed: () async {
@@ -126,15 +150,54 @@ class _PlaylistDownloadState extends State<PlaylistDownload> {
                             this.tracks[i]['download_url'],
                             this.tracks[i]['title'],
                             i,
+                            false,
                           );
                         }
                       },
-                      child: Text('Download All'),
+                      child: Row(
+                        children: [
+                          Icon(Icons.file_download),
+                          SizedBox(
+                            width: 3,
+                          ),
+                          Text('Download All in MP4'),
+                        ],
+                      ),
                     ),
+                    RaisedButton(
+                      onPressed: () async {
+                        for (var i = 0; i < this.length; i++) {
+                          print('current track: $i');
+                          while (this.tracks.length <= i) {
+                            print('${this.tracks.length} $i');
+                            await Future.delayed(Duration(seconds: 5));
+                          }
+
+                          await this.downloadFile(
+                            this.tracks[i]['download_url'],
+                            this.tracks[i]['title'],
+                            i,
+                            true,
+                          );
+                        }
+                      },
+                      child: Row(
+                        children: [
+                          Icon(Icons.audiotrack),
+                          SizedBox(
+                            width: 3,
+                          ),
+                          Text('Download All in MP3'),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 10,
           ),
           Expanded(
             child: ListView.builder(
@@ -170,9 +233,21 @@ class _PlaylistDownloadState extends State<PlaylistDownload> {
                                 this.tracks[index]['download_url'],
                                 this.tracks[index]['title'],
                                 index,
+                                false,
                               );
                             },
                           ),
+                          IconButton(
+                            icon: Icon(Icons.audiotrack),
+                            onPressed: () {
+                              this.downloadFile(
+                                this.tracks[index]['download_url'],
+                                this.tracks[index]['title'],
+                                index,
+                                true,
+                              );
+                            },
+                          )
                         ],
                       ),
                     ],
