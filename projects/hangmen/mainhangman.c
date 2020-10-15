@@ -60,7 +60,7 @@ int main () {
 
         printf("\t\t\t\ttype your choice number\t\t\t\n\n");
 
-        printf("\t\t\t\t\t ");scanf("%d", &mult);printf("\t\t\t\t\t\n");
+        printf("\t\t\t\t\t ");scanf("%d", &mult);printf("\t\t\t\t\t");
 
     }while ((mult < SOLO_MODE) || (mult > MULTI_MODE));  //the choice must be "1" or "2" not else
 
