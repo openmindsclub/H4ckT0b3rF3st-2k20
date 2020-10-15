@@ -8,11 +8,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)-8s %(me
 
 class YouTubePlaylistDownloader():
 
-    def __init__(self, playlist_url):
-        playlist = Playlist(playlist_url)
-        playlist._video_regex = re.compile(r"\"url\":\"(/watch\?v=[\w-]*)")
-        self.urls = playlist.video_urls
-        logging.info(f"[+] Number of tracks: {len(self.urls)}")
+    def __init__(self, playlist_url='', skip=False):
+        if not skip:
+            playlist = Playlist(playlist_url)
+            playlist._video_regex = re.compile(r"\"url\":\"(/watch\?v=[\w-]*)")
+            self.urls = playlist.video_urls
+            logging.info(f"[+] Number of tracks: {len(self.urls)}")
 
     def download_a_track(self, yt_instance, offset=1):
         ''' Download a single track '''

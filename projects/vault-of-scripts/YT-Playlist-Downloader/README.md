@@ -45,6 +45,10 @@ The API provides two endpoints:
 
     this is to be used by the app to get details of each track in the playlist, by making successive calls. or a single call to get the details of a single track
 
+* `/track`: Which takes a track URL, and checks whether the provided URL is a valid youtube track URL, if it's valid, it'll return the details of that track.
+
+* `/convert`: Which takes a track download URL, download that track, convert it to MP3 format, and send it back in the response
+
 ### App
 
 #### Setup

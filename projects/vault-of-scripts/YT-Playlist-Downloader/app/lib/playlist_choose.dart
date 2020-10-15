@@ -13,6 +13,8 @@ class PlaylistChooseState extends State<PlaylistChoose> {
   final URLController = TextEditingController();
   int length;
   YoutubePlaylistAPI api;
+  bool isTrack;
+  Map trackData = {};
 
   @override
   void dispose() {
@@ -46,11 +48,11 @@ class PlaylistChooseState extends State<PlaylistChoose> {
                   TextFormField(
                     controller: URLController,
                     decoration: InputDecoration(
-                        labelText: 'Enter the Playlist URL',
+                        labelText: 'Enter the Playlist/Track URL',
                         border: OutlineInputBorder()),
                     validator: (value) {
                       if (this.length == 0) {
-                        return 'Invalid Playlist';
+                        return 'Invalid Playlist/Track';
                       }
                       return null;
                     },
@@ -58,10 +60,24 @@ class PlaylistChooseState extends State<PlaylistChoose> {
                   RaisedButton(
                     onPressed: () async {
                       api = YoutubePlaylistAPI(url: URLController.text);
-                      int result = await api.getPlaylistLength();
-                      setState(() {
-                        this.length = result;
-                      });
+                      Map trackCheck = await api.getSingleTrack();
+                      if (trackCheck['is_track']) {
+                        this.trackData = {
+                          'title': trackCheck['title'],
+                          'download_url': trackCheck['download_url'],
+                          'thumbnail': trackCheck['thumbnail']
+                        };
+
+                        this.length = 1;
+                        this.isTrack = true;
+                      } else {
+                        int result = await api.getPlaylistLength();
+                        setState(() {
+                          this.length = result;
+                          this.isTrack = false;
+                        });
+                      }
+
                       if (_formKey.currentState.validate()) {
                         Navigator.pushNamed(
                           context,
@@ -69,6 +85,8 @@ class PlaylistChooseState extends State<PlaylistChoose> {
                           arguments: {
                             'playlist_url': URLController.text,
                             'length': this.length,
+                            'isTrack': this.isTrack,
+                            'trackData': this.trackData
                           },
                         );
                       }
