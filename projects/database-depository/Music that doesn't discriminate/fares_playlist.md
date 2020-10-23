@@ -26,7 +26,7 @@
 |The Killers|Hot Fuss|Somebody Told Me|Alternative Rock|https://www.youtube.com/watch?v=Y5fBdpreJiU|
 |Thousand Foot Krutch|The End Is Where We Begin|Courtesy Call|Hard Rock|https://www.youtube.com/watch?v=ocpDEOXABWg|
 |Sum 41|Chuck|Pieces|Pop Punk|https://www.youtube.com/watch?v=By7ctqcWxyM|
-|Guns And Roses|Appetite For Destruction|Patience|https://www.youtube.com/watch?v=ErvgV4P6Fzc|
+|Guns And Roses|Appetite For Destruction|Patience|Hard Rock|https://www.youtube.com/watch?v=ErvgV4P6Fzc|
 |Neils Lofgren|Acoustic Live|Man In The Moon|Blues|https://www.youtube.com/watch?v=qs1nbcMbdyQ|
 |Scorpion|Comeblack|No One Like You|Hard Rock|https://www.youtube.com/watch?v=6VwbyBGbqPY|
 |Julie Andrews|The Sound Of Music|My Favorite Things|Jazz|https://www.youtube.com/watch?v=33o32C0ogVM|
