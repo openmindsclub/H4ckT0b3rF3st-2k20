@@ -8,7 +8,6 @@ Requires some knowledge on C# and mysql
     - MySql
     - sqlfunction
     - searchsql
-    
 
 ## Instalation
 
