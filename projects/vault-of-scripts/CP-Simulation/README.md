@@ -1,5 +1,5 @@
 # CP-Simulation
-LS-Simulation is a script that simulate the cp command in linux using C language.
+CP-Simulation is a script that simulate the cp command in linux using C language.
 
 ### Setup
 Just clone this script. You don't need to add any external library.
