@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+  <title>Chapitre2</title>
+</head>
+<body>
+  <nav id="menuh">
+
+      <a href="../../acceuil.html" ><i > Accueil</i></a>
+      <a href="index.html" ><i > HTML</i></a>
+      <a href="../css/index.html"><i >CSS</i></a>
+      <a href="../js/index.html"><i >JavaScript</i></a>
+
+    </nav>
+          <!--hada l menu li yji mel coté-->
+          <nav id="menuv">
+             <header>
+               <h3 style="text-align: center;">Contenu du cours</h3>
+             </header>
+             <li>
+               <a href="chapitre1.html">Langage à balise</a>
+             </li>
+             <li>
+               <a href="chapitre2.html">Éléments HTML</a>
+             </li>
+             <li>
+               <a href="chapitre3.html">Les fomrulaires</a>
+             </li>
+             <li>
+               <a href="chapitre4.html">Quiz</a>
+             </li>
+            </nav >
+    <div id="centr">
+
+
+    <section id="seccont">
+        <header>
+          <h2>Éléments HTML</h2>
+        </header>
+
+        <h3>Règles de base</h3>
+        <p>Il s’agit bien plus selon moi d’un changement de pensée et d’organisation qui doit s’opérer
+        dans la création des pages web.</p>
+        <p>Une page web créée avec HTML doit être pensée en distinguant deux parties.</p>
+        <ul>
+          <li>
+             Un contenu, structuré au moyen des éléments HTML (grandes divisions, titres, paragraphes, tableaux, images et liens, etc.). À ce stade, et même s’il en a déjà une idée, le créateur ne doit pas nécessairement avoir une vue définitive de la présentation finale. Il lui faut maîtriser principalement l’organisation des informations à fournir à un utilisateur.
+          </li>
+          <li>
+             Une feuille de style CSS, définissant la mise en page de ces éléments en fonction du média qui va opérer le rendu du contenu (polices et tailles de caractères, bordures, marges, couleurs, positionnement dans la page, etc.). Les médias se diversifiant en effet de plus en plus en devenant des éléments portables dotés de petits écrans, le traditionnel écran d’ordinateur n’est plus le principal vecteur d’affichage d’une page web. La séparation du contenu et de la présentation étant réalisée, il est possible d’associer à chaque média une feuille de style adaptée au terminal.
+          </li>
+        </ul>
+
+        <h3>Un document bien formé</h3>
+        <p>Un document HTML doit respecter certaines règles simples.</p>
+        <p>Les éléments ne doivent pas se chevaucher et donc obéir au principe premier ouvert, dernier fermé. Dans ce cas, le premier élément est le parent du second et celui-ci est enfant du premier. Par exemple, le code suivant est incorrect :
+        &lt;div&gt; Cette division contient un titre &lt;hl&gt; Important ! &lt;/div&gt; &lt;/hl&gt;
+        et doit être remplacé par :</p>
+        <p>&lt;div&gt; Cette division contient un titre &lt;hl&gt; Important ! &lt;/hl&gt;&lt;/div&gt;</p>
+        <p>Tous les attributs doivent avoir une valeur incluse entre guillemets ("). Les différents attributs du même élément doivent être séparés par au moins un espace. Par exemple, plutôt que d’écrire :
+        &lt;p class=styleperso title=attention&gt; Texte important&lt;/p&gt;</p>
+        <p>on préférera le code suivant :</p>
+        <p>&lt;p class="styleperso" title="attention" &gt; Texte important&lt;/p&gt;</p>
+
+        <h3>Les éléments de base</h3>
+        <h4>La déclaration DOCTYPE</h4>
+        <p>Nous avons déjà indiqué que le code d’une page HTML devait se conformer à des règles précises.
+           La déclaration DOCTYPE, obligatoire dans tout document,
+            précise le type de document qui va être créé.
+             Dans HTML 5, cette déclaration est désormais réduite à sa plus simple expression par rapport à XHTML :</p>
+        <p><strong>&lt;!DOCTYPE html&gt;</strong></p>
+        <p>Dans ce code, la partie html donne le nom de l’élément racine du document.</p>
+
+        <h4>L’élément racine &lt;html&gt;</h4>
+        <p>L’élément &lt;html&gt; est l’élément racine du document, au sens XML du terme. C’est donc lui qui est le parent de tous les autres, soit directement,
+        comme &lt;head&gt; et &lt;body&gt;, soit indirectement par l’intermédiaire de ces derniers.
+         Il est donc le conteneur de premier niveau placé en haut de la hiérarchie de tous les éléments du document.</p>
+         <p>  Il n’existe que deux éléments enfants de l’élément &lt;html&gt;. En HTML 5, son contenu est constitué de l’en-tête du document,
+            introduit par la balise &lt;head&gt; et terminé par la balise &lt;/head&gt;, puis par le corps du document introduit par &lt;body&gt; et terminé par &lt;/body&gt;.</p>
+
+          <h4>L’en-tête d’un document : l’élément &lt;head&gt;</h4>
+          <p>L’élément &lt;head&gt; englobe un certain nombre d’informations utiles au bon affichage de la page web.
+           Ces informations dites métadonnées sont contenues dans six éléments différents qui ont chacun un rôle bien déterminé.
+           Il s’agit des éléments &lt;base/&gt;, &lt; 1 ink /&gt;, &lt;meta /&gt;, &lt;script&gt;, &lt;style&gt; et &lt;title&gt; dont nous allons étudier les rôles respectifs.</p>
+
+           <h4>L’adresse de base : l’élément &lt;base /&gt;</h4>
+           <p>Il s’agit d’un élément vide et n’a donc pas de balise de fermeture.
+            L’information qu’il contient est donnée dans son unique attribut href dont l’utilisation est obligatoire.
+             Le contenu de cet attribut est une URL qui fournit l’adresse de base de tous les fichiers utilisés dans la page quand leur adresse est transmise de manière relative.</p>
+
+            <h4>Les documents liés : l’élément &lt;link/&gt;</h4>
+            <p>Comme le précédent élément, il s’agit d’un élément vide dont l’information est contenue dans ses attributs.
+             Tl permet d’établir un lien entre la page HTML 5 en cours et un autre document externe nécessaire à la page.
+             Nous l’utiliserons particulièrement pour lier la page à une feuille de style CSS contenue dans un fichier
+              ayant l’extension .css ou un script JavaScript contenu dans un fichier sous l’extension . js.</p>
+
+            <h4>Les commentaires</h4>
+            <p>Il est toujours utile de commenter votre code HTML 5, comme tout code informatique d’ailleurs,
+             pour en permettre une meilleure compréhension, en particulier pour le relire un certain temps après l’avoir écrit.
+              Tous les commentaires que vous écrirez seront ignorés par le navigateur,
+             et vous pouvez donc vous exprimer librement. </p>
+             <p> Pour placer un commentaire, vous devez l’ouvrir avec les symboles &lt;!--,
+               et le fermer avec les symboles --&gt;. N’oubliez pas de fermer vos commentaires,
+               sinon tout ce qui suit sera encore interprété en tant que tel, provoquant une erreur.</p>
+
+              <h4>Les méta-informations : l’élément &lt;meta /&gt;</h4>
+              <p>L’élément &lt;meta /&gt; est également un élément vide pour lequel l’information est contenue dans ses attributs.
+               Ces informations ne sont donc pas visibles dans la page mais elles sont destinées au serveur web,
+                aux navigateurs et aux moteurs de recherche. Chaque information est identifiée par un nom et un contenu.</p>
+              <p> Le nom de l’information est défini dans les attributs name ou http-equiv dont les rôles sont similaires.</p>
+
+              <h4>Les scripts internes : l’élément &lt;script&gt;</h4>
+              <p>Nous avons vu qu’il était possible de lier la page HTML 5 avec un fichier externe contenant du code JavaScript au moyen de l’élément &lt;1 ink /&gt;.
+               Si cette solution correspond bien au concept de séparation des fichiers ayant chacun un rôle différent,
+                il est également possible de réaliser la même opération avec l’élément &lt;script&gt; qui sera alors vide.</p>
+              <p> Le type de langage utilisé est précisé dans l’attribut type qui est obligatoire et contient généralement la valeur text/javascript ou application/javascript pour JavaScript.
+               Dans le cas d’un fichier externe, il faut employer l’attribut src qui donne l’URL du fichier externe du script qui possède l’extension . js pour JavaScript.</p>
+
+               <h4>L’incorporation des styles : l’élément &lt;style&gt;</h4>
+               <p>L’utilisation des styles CSS est étroitement liée à HTML 5 comme elle l’était déjà avec XHTML.
+                Nous avons vu qu’ils pouvaient le plus souvent être écrits dans un fichier externe lié à la page avec l’élément &lt;link /&gt;.
+                Cependant, comme pour les scripts, il est possible de les placer directement dans le code HTML en tant que contenu de l’élément &lt;sty 1 e&gt;.</p>
+               <p> Il n’est pas interdit d’écrire tous les styles dans cet élément mais cette possibilité sera réservée aux cas où les styles sont peu nombreux.
+                 Il est aussi envisageable de lier un fichier externe contenant les styles communs à toutes les pages
+                 d’un site avec &lt;1 ink /&gt; et d’ajouter des styles particuliers à une page dans l’élément &lt;style&gt; de celle-ci.</p>
+
+                <h4>Le titre de la page : l’élément &lt;title&gt;</h4>
+                <p>   Chacun a pu remarquer dans son navigateur qu’avant l’affichage complet d’une page web, un titre apparaît dans la barre de titre située en haut de
+                   la fenêtre du navigateur.</p>
+                  <p>  Ce texte est défini dans l’élément &lt;ti tl e&gt; qui est l’un des deux seuls dont la présence est obligatoire dans l’élément &lt;head&gt;.
+                    Son contenu est un simple texte qui doit résumer le contenu de la page en une ligne maximum.</p>
+
+                <h4>Le corps du document : l’élément &lt;body&gt;</h4>
+                <p> L’essentiel des éléments de l’en-tête &lt;head&gt; que nous venons d’aborder ont un contenu invisible dans le navigateur. L’élément &lt;body&gt; au contraire est le conteneur de l’ensemble des éléments textuels et graphiques d’une page web.</p>
+                <p>    Au fur et à mesure de leur étude, nous préciserons la catégorie des éléments qui peuvent être inclus dans tel élément. Ceci est utile pour savoir, comme en XHTML, quel peut être le contenu (les enfants) d’un élément et dans quels éléments il peut être inclus (ses parents). Il est important pour être conforme aux prescriptions HTML 5 de respecter les différentes inclusions. C’est donc le premier contrôle auquel vous devez procéder. Par exemple, l’élément &lt;body&gt; peut contenir tous les éléments de la catégorie Flow mais l’élément &lt;caption&gt; ne peut avoir comme parent que l’élément &lt;table&gt; et rien d’autre. Notons malgré tout que même si la catégorie Flow contient le texte brut, il est déconseillé d’inclure directement du texte dans l’élément &lt;body&gt; ; il vaut mieux le placer dans un élément enfant de &lt;body&gt;, ne serait-ce que pour lui appliquer simplement un style particulier et aussi pour qu’il apparaisse clairement dans la hiérarchie des éléments.</p>
+                 <img id="imgBody" src="../../image/body.png" >
+
+                <h4>L’élément &lt;div&gt;</h4>
+                <p>  L’élément &lt;di v&gt; peut être directement inclus dans le corps du document &lt;body&gt;. Il crée une division de la page. Ce type de division permet de grouper dans un seul bloc un ensemble composé soit de textes, soit d’éléments inclus, auxquels on pourra appliquer globalement des styles particuliers. Une division créée avec &lt;div&gt; permet d’inclure une très grande variété d’éléments HTML 5, comme du texte brut, les éléments en ligne et la totalité des éléments de la catégorie Flow comme l’autorise &lt;body&gt;, dont par exemple les titres, les listes et les formulaires, ce qui est interdit dans un paragraphe. C’est donc un élément très riche qui se prêtait bien à la création de la structure entière d’une page avant HTML 5, et auquel il est possible d’appliquer par la suite des styles propres et des positions précises.</p>
+
+                <h4>Les titres et groupes de titres</h4>
+                <p>Dans une page web, c’est en priorité les titres qui identifient les grandes sections de texte, comme dans ce livre. Les titres sont contenus dans les éléments &lt;hl&gt; ... &lt;/hl&gt;, pour les titres de premier niveau, à &lt;h6&gt; ... &lt;/h6&gt;, pour les titres de plus bas niveau. Entre ces extrêmes, nous pouvons utiliser les titres &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt; et &lt;h5&gt; ; nous noterons &lt;hN&gt; l’ensemble de ces éléments. Si aucun style personnalisé ne leur est donné, les navigateurs affichent les titres dans des polices de tailles dégressives pour les éléments &lt;hl&gt; (le plus grand) à &lt;h6&gt; (le plus petit). Les éléments de titre faisant partie des éléments de bloc, ils sont automatiquement suivis d’un saut de ligne, après la balise de fin &lt;/hl&gt; par exemple. On peut cependant adapter cette particularité en définissant un style personnalisé pour ces éléments. Un élément &lt;hN&gt; peut contenir bien sûr du texte, ce qui en constitue l’utilisation la plus fréquente, mais il est utile de savoir qu’il peut aussi inclure tous les éléments de la catégorie phrasing. Il peut par ailleurs être inclus dans tous les éléments de type Flow.
+                Les éléments</p>
+
+                <h4>Les paragraphes : l’élément &lt;p&gt;</h4>
+                <p>Comme dans un traitement de texte, le contenu d’une page peut être divisé en différents paragraphes. Chaque paragraphe sera par défaut précédé et suivi d’un saut de ligne pour marquer la séparation avec le contenu précédent et suivant. Chaque paragraphe doit être contenu dans l’élément &lt;p&gt;, et donc délimité par les balises &lt;p&gt; et &lt;/p&gt;. S’il peut être inclus dans tous les éléments de la catégorie Flow, chaque paragraphe peut bien sûr contenir du texte mais également tous les éléments de la catégorie Phrasing comme des images, des objets multimédias ou des composants de formulaire.</p>
+
+                <h4>Les articles et les sections</h4>
+                <p>La division du contenu textuel ou graphique au moyen des éléments &lt;div&gt; ou &lt;p&gt; étant assez pauvre du point de vue sémantique, HTML 5, dont c’est la principale évolution, enrichit dans ce but l’éventail des éléments signifiants en ajoutant les éléments &lt;article&gt; et &lt;section&gt;. On discute beaucoup par ailleurs de l’imbrication de ces deux éléments l’un dans l’autre et pour savoir qui est le parent de l’autre. Un article se veut être un contenu indépendant (comme celui d’un journal) qui peut contenir des titres, des sous-titres puis être divisé en sections elles-mêmes dotées de titres, par exemple.</p>
+                <p>D’un point de vue purement technique de conformité aux prescriptions HTML 5, ils sont tous les deux dans la catégorie Flow, font partie des éléments de sectionnement et peuvent être parents ou enfants de tous les éléments de cette catégorie. Il n’est donc pas exclu qu’une section soit divisée à son tour en plusieurs articles indépendants. Dans ce cas, la section fait penser à une rubrique générale d’un journal (politique, sport, faits divers...) qui contient plusieurs articles.</p>
+
+                <h4>Les listes ordonnées</h4>
+                <p>Pour créer une liste dans laquelle la notion d’ordre a une importance, nous pouvons utiliser une liste ordonnée dont chaque item sera numéroté par défaut à l’aide d’entiers incrémentés de 1 à N, suivis d’un point puis du contenu de chaque item. Cette présentation type résulte du style utilisé par défaut par les navigateurs mais nous verrons dans la seconde partie de ce livre (voir le chapitre 14, Style des listes) que la présentation des éléments de liste peut être beaucoup plus variée en utilisant des propriétés CSS spécifiques. Une liste ordonnée doit commencer par l’élément &lt;ol&gt; (pour Ordered List) qui doit obligatoirement contenir au moins un élément &lt;li&gt; qui lui-même renferme le contenu visible de chaque item. Il faut donc que &lt;ol&gt; contienne autant d’éléments &lt;li&gt; qu’il y a d’items dans la liste désirée. L’élément &lt;ol &gt; ne peut rien contenir d’autre, même pas de texte brut.</p>
+                <p>La structure d’une liste ordonnée est par exemple la suivante :</p>
+                <p>
+                  &lt;ol type="a" start="5" &gt;
+                  &lt;1i&gt;Item l&lt;/li&gt;
+                  &lt;1i&gt;Item 2&lt;/li&gt;
+                  &lt;1i&gt;Item 3&lt;/li&gt;
+                  &lt;/ol&gt;
+                </p>
+
+                <h4>Les listes non ordonnées</h4>
+                <p>Les listes non ordonnées (Unordered List) fournissent un outil de structuration similaire au précédent mais sans la notion de numérotation. Elles sont également appelées listes à puces car chaque item est précédé d’une puce graphique qui, par défaut, est un disque plein de la même couleur que le texte qui la suit. Nous verrons au chapitre 14 que ces puces graphiques peuvent être personnalisées à volonté. Une liste à puces est introduite par l’élément &lt;ul&gt; et fermée par &lt;/ul&gt;. Comme l’élément &lt;ol&gt;, son seul contenu direct est un ou plusieurs éléments &lt;li&gt;. Le contenu de chaque élément &lt;li&gt; est le même que pour les listes ordonnées.</p>
+                <p>La structure d’une liste à puces est donc la suivante :</p>
+                <p>
+                  &lt;ul&gt;
+                  &lt;1i&gt;Item l&lt;/li&gt;
+                  &lt;1i&gt;Item 2&lt;/1i&gt;
+                  &lt;1i&gt;Item 3&lt;/li&gt;
+                  &lt;/ul&gt;
+                </p>
+
+                <h4>L’élément de menu</h4>
+                <p>L’élément &lt;menu&gt; a eu un sort variable selon les versions de HTML ; présent en HTML 4, il a été déclaré obsolète dans XHTML et le voilà remis au goût du jour par HTML 5. Comme son nom l’indique, sa destination est d’être le conteneur de menus comprenant par exemple un ensemble de liens permettant la navigation. Appartenant à la fois aux catégories Flow et Interactive, il peut être inclus et incorporer tous les éléments Flow et l’élément &lt;li&gt; quand son objet est de contenir une liste.</p>
+
+
+        <footer>
+          <a href="chapitre3.html" id="suiv">Les formulaires &gt;</a>
+          <a href="chapitre1.html" id="preced">&lt; Langage à balise</a>
+        </footer>
+    </section>
+    </div>
+  </body>
+</html>

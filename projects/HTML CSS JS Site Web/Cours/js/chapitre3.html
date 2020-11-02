@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+    <title>Cours</title>
+  </head>
+  <body>
+    <!--hada l menu li yji mel fou9-->
+    <nav id="menuh">
+      <a href="../../acceuil.html" ><i> Accueil</i></a>
+      <a href="../html/index.html"><i >HTML</i></a>
+      <a href="../css/index.html"><i >CSS</i></a>
+      <a href="idnex.html"><i>JavaScript</i></a>
+
+    </nav>
+
+<!--hada l menu li yji mel coté-->
+    <nav id="menuv">
+       <header>
+         <h3 style="text-align: center;">Contenu du cours</h3>
+       </header>
+       <li>
+         <a href="chapitre1.html">Les bases en JavaScript</a>
+       </li>
+       <li>
+         <a href="chapitre2.html">Variables et opérateurs</a>
+       </li>
+       <li>
+         <a href="chapitre3.html">Le DOM HTML</a>
+       </li>
+       <li>
+         <a href="chapitre4.html">Quiz</a>
+       </li>
+      </nav >
+
+
+
+      <div id="centr">
+        <section id="seccont">
+            <header >
+              <h2>Le DOM HTML</h2>
+            </header>
+
+            <h3>Accéder aux éléments de la page Web depuis JavaScript</h3>
+                        <p>Les navigateurs Web (tels que Google Chrome) donnent accès à une API (voir définition plus haut) permettant à nos programmes JavaScript d’interagir avec le DOM de la page Web à laquelle ils sont liés.
+                        C’est à dire qu’un script intégré dans une page peut utiliser des fonctions permettant de manipuler le contenu de cette page. Par exemple: pour récupérer des informations saisies par l’utilisateur dans des champs de la page, ou encore modifier le contenu et/ou l’affichage de la page.</p>
+                        <p>Pour accéder à un élément de la page, il faut identifier précisément (c.a.d. sans ambiguïté) cet élément auprès du navigateur. Par exemple: en l’adressant par son identifiant unique (attribut id de l’élément).
+                        Pour cela, l’API du DOM met à notre disposition un objet (cf chapitre précédent) appelé document, et cet objet contient plusieurs fonctions. Nous allons d’abord nous intéresser à la fonction getElementById() qui permet d’accéder à l’objet représentant un élément de la page, en fonction de son identifiant unique.</p>
+                        <p>Supposons que notre page Web contienne les éléments suivants:</p>
+                        <p>&lt;body&gt; <br>
+                        &lt;p id="premier-paragraphe"&gt;Bonjour&lt;/p&gt;<br>
+                        &lt;p id="deuxieme-paragraphe"&gt;le monde&lt;/p&gt;<br>
+                        &lt;/body&gt;</p>
+                        <p>Nous pouvons alors accéder au premier paragraphe en JavaScript (ex: depuis un script rattaché à cette page, ou depuis la console du navigateur) de la manière suivante:
+                        <p>document.getElementById('premier-paragraphe');<br>
+                        // => retourne un objet qui représente l'élément HTML correspondant</p>
+
+
+                        <h3>Modifier le contenu d’un élément HTML</h3>
+                        <p>La propriété innerHTML va également nous servir à modifier le contenu d’un élément HTML.</p>
+                        <p>Pour cela, il suffit d’utiliser innerHTML sur un élément et de lui affecter une nouvelle valeur textuelle.</p>
+                        <p>Pour modifier la valeur d’un attribut HTML, nous allons généralement utiliser la propriété attribute de l’objet Element.</p>
+                        <p>Pour utiliser cette propriété, nous n’allons pas écrire attribute mais bien le nom de l’attribut donc on souhaite modifier la valeur (comme href par exemple).
+                        Ensuite, nous n’aurons plus qu’à affecter une nouvelle valeur à l’attribut ciblé.</p>
+
+
+
+
+            <footer>
+              <a href="chapitre4.html" id="suiv">Quiz &gt;</a>
+                <a href="chapitre2.html" id="preced">&lt; Variables et opérateurs</a>
+            </footer>
+          </section>
+
+
+
+
+
+
+      </div>
+
+  </body>
+</html>

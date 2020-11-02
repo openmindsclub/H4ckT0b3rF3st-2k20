@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+  <title>Chapitre3</title>
+</head>
+<body>
+          <nav id="menuh">
+
+              <a href="../../acceuil.html" ><i> Accueil</i></a>
+              <a href="index.html"><i > HTML</i></a>
+              <a href="../css/index.html"><i>CSS</i></a>
+              <a href="../js/index.html"><i >JavaScript</i></a>
+
+            </nav>
+
+        <!--hada l menu li yji mel coté-->
+        <nav id="menuv">
+           <header>
+             <h3 style="text-align: center;">Contenu du cours</h3>
+           </header>
+           <li>
+             <a href="chapitre1.html">Langage à balise</a>
+           </li>
+           <li>
+             <a href="chapitre2.html">Éléments HTML</a>
+           </li>
+           <li>
+             <a href="chapitre3.html">Les fomrulaires</a>
+           </li>
+           <li>
+             <a href="chapitre4.html">Quiz</a>
+           </li>
+          </nav >
+    <div id="centr">
+
+
+    <section id="seccont">
+        <header>
+          <h2>Les formulaaires</h2>
+        </header>
+
+        <h3>La balise &lt;form&gt;</h3>
+        <p>La déclaration de base d’un formulaire se fait par:</p>
+        <ul>
+          <li>le tag “form”</li>
+          <li>la spécification des paramètres “action”, “method” et parfois “name” </li>
+          <p>&lt;FORM ACTION=”URL” METHOD=GET ou POST&gt;
+          ....
+          &lt;/FORM&gt;</p>
+          <li>L’URL spécifié par le paramètre ACTION désigne la ressource vers laquelle l’information recueillie sera transmise.</li>
+          <li>Si ce paramètre n’est pas spécifié le document courant est utilisé par défaut.</li>
+          <li>La valeur du paramètre METHOD va dépendre du type de traitement que vous utilisez:</li>
+          <ul>
+            <li>GET est la méthode par défaut et ajoute le contenu du formulaire à l’URL spécifié dans ACTION comme s’il s’agissait d’un query normal.</li>
+            <li>POST envoie le contenu du formulaire au serveur comme un ensemble de données sans les faire figurer à la suite de l’URL.</li>
+          </ul>
+        </ul>
+
+        <h3>La balise &lt;INPUT&gt;</h3>
+        <p>“&lt;INPUT&gt;” sert à poser des questions selon différentes modalités:</p>
+        <p>&lt;INPUT TYPE=”...” NAME=”...” VALUE=”...” CHECKED=”...”
+        SIZE=”...” MAXLENGTH=”...”&gt;</p>
+        <p>"TYPE" spécifie le type de question:</p>
+        <ul>
+          <li>
+             “text” est la valeur par défaut et permet de saisir une ligne de texte. (par exemple nom, prénom, adresse etc...
+          </li>
+          <li>
+            “password” fait apparaître le texte entré sous forme d’astérisques. (*)
+          </li>
+          <li>
+            “checkbox” permet de définir un bouton qui est soit poussé ou relâché.
+          </li>
+          <li>
+            “radio” définit un ensemble de boutons dont un seul peut être activé à la fois. (par exemple: rouge/bleu/vert)
+          </li>
+          <li>
+            “submit” définit un bouton qui déclenche l’envoi du contenu du formulaire.
+          </li>
+          <li>
+            “reset” remet les valeurs des champs du formulaire à leur valeur par défaut.
+          </li>
+        </ul>
+
+        <h3> Menus déroulants et listes à choix multiples &lt;SELECT&gt;</h3>
+        <ul>
+          <li>SELECT permet de définir un menu déroulant.</li>
+          <li>Vous pouvez ainsi forcer le choix entre plusieurs possibilités. </li>
+          <li>Celles-ci sont référencées par le tag “option” <p>Paramètres:</p></li>
+          <ul>
+            <li>NAME est le nom symbolique du champ contenant la réponse.</li>
+            <li>Si SIZE=1 le browser affichera un menu déroulant classique.
+              <p>Si SIZE=2 ou plus les options apparaîtront dans une liste “scrollable” qui laisse apercevoir le nombre d’items spécifiés par SIZE.</p>
+            </li>
+            <li>MULITIPLE ne prend pas de valeur. S’il est mentionné il permet le choix de plus d’un item. Dès lors, même si SIZE=1, le browser affiche une liste “scrollable”.</li>
+            <li>le tag OPTION ne requiert pas de fermeture et permet d’indiquer le texte d’un élément du menu déroulant.</li>
+          </ul>
+        </ul>
+
+        <h3>Les zones de texte &lt;TEXTAREA&gt;</h3>
+        <p>Permet de définir une entrée qui s’étend sur plus qu’une ligne.:</p>
+        <ul>
+          <li>A utiliser par exemple pour permettre à l’utilisateur de donner un commentaire.</li>
+          <li>Comme pour les autres champs il faut spécifier un nom symbolique pour le contenu du champ. (NAME)</li>
+          <li>La largeur et la hauteur (en nombre de lignes) de la fenêtre de saisie est déterminé par les paramètres ROWS et COLS</li>
+        </ul>
+
+
+        <footer>
+          <a href="chapitre4.html" id="suiv">Quiz &gt;</a>
+          <a href="chapitre2.html" id="preced">&lt; Éléments HTML</a>
+        </footer>
+    </section>
+    </div>
+  </body>
+</html>

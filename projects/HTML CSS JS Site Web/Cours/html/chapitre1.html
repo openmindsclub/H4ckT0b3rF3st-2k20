@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="../../CSS/css.css">
+  <title>Chapitre1</title>
+</head>
+<body>
+  <nav id="menuh">
+
+      <a href="../../acceuil.html" ><i> Accueil</i></a>
+      <a href="index.html" ><i > HTML</i></a>
+      <a href="../css/index.html"><i>CSS</i></a>
+      <a href="../js/index.html"><i >JavaScript</i></a>
+
+    </nav>
+
+<!--hada l menu li yji mel coté-->
+  <nav id="menuv">
+   <header>
+     <h3 style="text-align: center;">Contenu du cours</h3>
+   </header>
+   <li>
+     <a href="chapitre1.html">Langage à balise</a>
+   </li>
+   <li>
+     <a href="chapitre2.html">Éléments HTML</a>
+   </li>
+   <li>
+     <a href="chapitre3.html">Les fomrulaires</a>
+   </li>
+   <li>
+     <a href="chapitre4.html">Quiz</a>
+   </li>
+  </nav >
+<div id="centr">
+
+
+
+    <section id="seccont">
+        <header>
+          <h2>Les éléments, balises et attributs</h2>
+        </header>
+        <article>
+
+
+            <p>Mais au juste comment fonctionne HTML 5 et qu’est-ce qu’un langage de balisage ?
+              Vous avez sûrement déjà utilisé un traitement de texte tel que Word.
+              Votre texte peut comprendre des titres, des paragraphes, des images, des tableaux, et vous pouvez employer
+              différentes polices et tailles de caractères dans le même document. Le document final que vous avez réalisé ne laisse apparaître que le résultat de votre mise en page, mais en arrière-plan, votre traitement de texte a enregistré tous les paramètres de mise en page que vous avez utilisés en plus du texte lui-même.
+              Dans un langage de balisage, tout contenu, qu’il s’agisse de texte, d’images ou d’éléments multimédias les plus divers, doit être enfermé dans un élément. En HTML, chaque élément possède un nom déterminé ; la liste des éléments utilisables est limitative et clairement définie dans la spécification du langage. C’est la grande différence entre HTML et XML, langage dans lequel c’est le programmeur qui crée ses propres éléments selon ses besoins. A quelques exceptions près, un élément a la structure suivante :
+            </p>
+            <p><strong>&lt;nom_element&gt; Contenu &lt;/nom_element&gt;</strong></p>
+            <p>Son contenu est précédé par une balise d’ouverture &lt;nom_element&gt; et suivi par une balise de fermeture &lt;/nom_el ement&gt;.
+              Toutes les balises d’ouverture (ou marqueur) commencent par le signe <strong>&lt;</strong> et se terminent par le signe <strong>&gt;</strong>. La balise de fermeture suit la même règle mais le nom de l’élément est précédé d’un slash (/). Les navigateurs interprètent donc les contenus en fonction du nom de l’élément et attribuent un style par défaut à chacun de ses contenus.</p>
+              <p>Les caractéristiques de chaque élément peuvent être précisées par des informations complémentaires que l’on désigne en tant qu’attributs de l’élément. Tl peut s’agir par exemple de la définition de la largeur, de la hauteur ou de l’adresse du contenu. Comme nous le verrons dans les sections suivantes, un certain nombre d’attributs sont communs à quasiment tous les éléments de base.</p>
+              <p>Les attributs d’un élément sont toujours définis dans la balise d’ouverture et doivent être séparés les uns des autres par au moins un espace typographique. Chaque attribut a généralement une valeur, même s’il ne peut prendre qu’une valeur unique. Presque toutes les valeurs ne sont donc pas implicites du moment que l’attribut figure dans la balise d’ouverture. La présence de certains attributs est obligatoire dans quelques éléments particuliers, ce que nous préciserons systématiquement le cas échéant. La plupart du temps, les attributs d’un élément sont facultatifs et il appartient au programmeur de déterminer leur définition par rapport au cas qu’il doit traiter. Nombre d’attributs ont une valeur par défaut. Cela signifie que même si on ne les définit pas dans l’élément, celui-ci se comporte comme si c’était le cas. Il est donc important de connaître ce type d’attribut et de ne pas négliger de les définir avec une autre valeur si ce comportement par défaut n’est pas désiré. La valeur de tous les attributs doit être définie entre guillemets. La syntaxe conforme d’un élément ayant des attributs est donc la suivante :</p>
+
+              <p><strong>&lt;nom_element attributl="valeurl" attribut2="valeur2" &gt; Contenu de l’élément &lt;/nom_element&gt;</strong></p>
+              </article>
+              <article>
+                <header>
+                <h2>  Les attributs de base de HTML</h2>
+                </header>
+                  <p>Dans leur quasi-totalité, les éléments disponibles en HTML ont en commun un ensemble
+                  d’attributs ayant chacun le même rôle. Ces attributs se répartissent en trois catégories.
+                  Chaque élément peut posséder par ailleurs d’autres attributs particuliers. Quand nous
+                  définirons par la suite les différents éléments,
+                  nous signalerons s’ils possèdent ces attributs sans rappeler leur définition.</p>
+                  <h3>Les attributs globaux (ou noyau)</h3>
+                  <p>Ils s’appliquent à quasiment tous les éléments.</p>
+                  <ul>
+                    <li>
+                      L’attribut <i>accesskey</i> définit la touche de raccourci clavier pour accéder à un élément.
+                    </li>
+
+                    <li>
+                      L’attribut <i>id</i> sert à identifier un élément de manière unique en lui donnant un nom, soit pour lui attribuer un style, soit pour y faire référence sans ambiguïté dans un script JavaScript.
+                    </li>
+
+                    <li>
+                      L’attribut <i>class</i> contient le nom d’une classe CSS qui contient des définitions de styles. Comme nous le verrons dans la seconde partie, son usage est très répandu pour affecter ponctuellement des styles à un élément.
+                    </li>
+
+                    <li>
+                       L’attribut <i>contextmenu</i> contient le nom de l’identifiant d’un menu contextuel (créé avec l’élément &lt;menu&gt;) qui s’affiche quand on utilise l’élément auquel il est attaché (pas encore opérationnel).
+                    </li>
+
+                    <li>
+                      L’attribut <i>draggable</i> prend les valeurs booléennes true ou false qui indiquent si l’élément est déplaçable dans la page. Peu fonctionnel pour l’instant.
+                    </li>
+
+                    <li>
+                      L’attribut <i>dropzone</i> définit les contenus que l’on peut déposer dans l’élément auquel il se rapporte.
+                    </li>
+
+                    <li>
+                      L’attribut <i>dir</i> indique le sens de lecture du contenu textuel d’un élément ; il peut prendre les valeurs ltr (lecture de gauche à droite) ou rtl (de droite à gauche).
+                    </li>
+
+                    <li>
+                      L’attribut <i>hidden</i> prend une valeur booléenne true ou false et indique que l’élément ne sera pas visible dans la page (valeur true). Il faudra utiliser un script JavaScript pour modifier sa valeur et le faire apparaître (valeur false).
+                    </li>
+
+                    <li>
+                      L’attribut <i>lang</i> contient le code de la langue utilisée dans l’élément.
+                    </li>
+
+                    <li>
+                      L’attribut <i>style</i> permet de définir un style localement pour un élément donné. Il est encore accepté en HTML mais déconseillé au profit des styles regroupés dans l’élément &lt;style&gt; ou dans un fichier externe à l’extension .css, ces solutions permettant une maintenance plus facile.
+                    </li>
+
+                    <li>
+                      L’attribut <i>tabindex</i> est généralisé à tous les éléments. Sa valeur est un nombre entier qui donne une position à l’élément dans l’ordre des tabulations.
+                    </li>
+
+                    <li>
+                      L’attribut <i>title</i> contient un texte qui apparaît dans une bulle quand l’utilisateur positionne le curseur quelques instants (ce n’est pas instantané) sur un élément. Le texte qu’il contient peut servir à fournir une information ou une explication sur le rôle de l’élément.
+                    </li>
+                  </ul>
+
+                  <h3>Les attributs de gestion d’événements</h3>
+                  <p>Ces attributs permettent de gérer les événements dont un élément peut être le siège et qui sont créés par l’utilisateur. Leur contenu est un script écrit en général en langage JavaScript. HTML 5 définit un grand nombre d’attributs de gestion d’événements, y compris pour des éléments qui ne peuvent pas être le support de ces événements. Il appartient donc aux programmeurs d’effectuer des tests pour vérifier la réalité des événements pour un élément donné. Vous trouverez ci-après la liste des gestionnaires de base et la description de l’événement correspondant.</p>
+                  <table border="1">
+                    <caption><h3>Les attributs gestionnaires d’événements communs</h3></caption>
+                    <tr>
+                      <th>Attribut</th>
+                      <th>Action de l’utilisateur</th>
+                    </tr>
+                    <tr>
+                      <td>onabort</td>
+                      <td>Arrêt d’une opération</td>
+                    </tr>
+
+                    <tr>
+                      <td>oncanplay</td>
+                      <td>Un fichier multimédia peut être lu (au moins son début)</td>
+                    </tr>
+
+                    <tr>
+                      <td>oncanplaythrough</td>
+                      <td>Un fichier multimédia peut être lu entièrement</td>
+                    </tr>
+
+                    <tr>
+                      <td>onclick</td>
+                      <td>Clic sur le contenu de l’élément</td>
+                    </tr>
+
+                    <tr>
+                      <td>oncontextmenu</td>
+                      <td>Un menu contextuel est déclenché</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondblcli ck</td>
+                      <td>Double-clic sur le contenu de l’élément</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondrag</td>
+                      <td>Un élément est en cours de déplacement</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondragend</td>
+                      <td>Le déplacement est fini</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondragenter</td>
+                      <td>Un déplacement a une cible qui l’accepte</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondragleave</td>
+                      <td>L'origine du déplacement est acceptableLe déplacement est fini</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondragover</td>
+                      <td>Un élément déplacé survole l’élément concerné par l’attribut</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondragstart</td>
+                      <td>Début du déplacement</td>
+                    </tr>
+
+                    <tr>
+                      <td>ondrop</td>
+                      <td>Dépose d’un élément</td>
+                    </tr>
+                  </table>
+              </article><br>
+
+          <footer>
+            <a href="chapitre2.html" id="suiv">Éléments HTML &gt;</a>
+            <a href="index.html" id="preced">&lt; Introduction</a>
+          </footer>
+    </section>
+    </div>
+  </body>
+</html>
