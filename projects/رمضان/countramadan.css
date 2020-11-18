@@ -1,0 +1,184 @@
+@font-face{
+	font-family: Bustan ;
+	src: url(Bustan-Bold.otf);
+	}
+	
+body{
+	background : url(ramadhan.jpg) center fixed;
+background-size:cover;
+	overflow: hidden;
+}
+
+table{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	color: #D3AA79;
+	text-align: center;
+	background : transparent;
+	border : 1px solid orange;
+	padding: 10px;
+	box-shadow: 0 0 5px 3px red;
+	width: 80%;
+}
+
+.titre{
+	font-size: 60px;
+}
+
+audio{
+	position: absolute;
+	top: 90%;
+right: 1%;
+}
+
+footer{
+	color: #fff;
+	position: absolute;
+	top: 96%;
+	left: 45%;
+	font-size: 20px
+	
+}
+h2{
+	color:#D3AA79;
+	position: absolute;
+	top: 27%;
+	left: 34%;
+	font-size: 70px;
+	font-family: 'Courier New'
+	
+}
+audio{
+	visibility: visible;
+}
+
+h3{
+	color:#D3AA79;
+	position: absolute;
+	top: 63%;
+	left : 27%;
+	font-size: 65px;
+	font-family: Bustan;
+	font-weight: normal;
+}
+
+.light{
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+	margin: -15px 0 0 0;
+	padding: 0;
+	pointer-events: none;
+	width: 100;
+
+}
+
+.light li{
+	position: relative;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	width: 12px;
+	height: 28px;
+	border-radius: 50%;
+	margin: 20px;
+	background-color: rgba(0, 247, 175, 1);
+	animation-name: flash-1;
+	animation-duration: 2s;
+}
+
+.light li:nth-child(2n+1){
+	background-color: rgba(0, 255, 255, 1);
+	animation-name: flash-2;
+	animation-duration: 0.4s;
+
+}
+
+.light li:nth-child(4n+2){
+	background-color: rgba(247, 0, 148, 1);
+	animation-name: flash-3;
+	animation-duration: 0.4s;
+	
+}
+
+.light li:nth-child(odd){
+
+	animation-duration: 1.8s;
+	
+}
+
+.light li:before{
+	content: "";
+	position: absolute;
+	background-color: #222;
+	width: 10px;
+	height: 9.33333px;
+	border-radius: 3px;
+	top: -4.7777px;
+	left: 1px;
+
+	
+}
+
+.light li:after{
+	content: "";
+	position: absolute;
+top: -14px;
+left: 9px;
+width: 52px;
+height: 18.9999px;
+border-bottom: 2px solid #222;
+border-radius: 50%;
+}
+
+
+.light li:last-child:after{
+	content: none;
+
+}
+
+.light li:first-child{
+margin-left: -40px;
+
+}
+
+@keyframes flash-1{
+	0%,100%{
+		background-color: rgba(0, 247, 175, 1);
+		box-shadow: 0 4.99999px 24px 3px rgba(0, 247, 175, 1);
+	}
+
+	50%{
+		background-color: rgba(0, 247, 175, 1);
+		box-shadow: 0 4.99999px 24px 3px rgba(0, 247, 175, 0.2);
+	}
+}
+
+@keyframes flash-2{
+	0%,100%{
+		background-color: rgba(0, 255, 255, 1);
+		box-shadow: 0 4.99999px 24px 3px rgba(0, 247, 175, 1);
+	}
+
+	50%{
+		background-color: rgba(0, 247, 175, 1);
+		box-shadow: 0 4.99999px 24px 3px rgba(0, 247, 175, 0.2);
+	}
+}
+
+@keyframes flash-3{
+	0%,100%{
+		background-color: rgba(247, 0, 148, 1);
+		box-shadow: 0 4.99999px 24px 3px rgba(247, 0, 148, 0.5);
+	}
+
+	50%{
+		background-color: rgba(247, 0, 148, 1);
+		box-shadow: 0 4.99999px 24px 3px rgba(0, 247, 175, 0.2);
+	}
+}

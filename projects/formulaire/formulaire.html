@@ -1,0 +1,70 @@
+<html>
+<head><title>Best formulaire</title>
+	  <meta charset="utf-8">
+	  <link rel="stylesheet" type="text/css" href="formulaire.css">
+</head>
+<body><center>
+<form>
+        <h1>Formulaire d'inscription</h1>
+        <p>
+            <label for="pseudo">Pseudo</label> :<br>
+            <input type="text" name="pseudo" id="pseudo" required>
+            <span id="aidePseudo"></span>
+        </p>
+       <p>
+            <label for="mdp1">Saisissez le mot de passe</label> :<br>
+            <input type="password" name="mdp1" id="mdp1" required>
+			<span id="aideMdp"></span>
+        </p>
+        <p>
+            <label for="mdp2">Confirmez le mot de passe</label> :<br>
+            <input type="password" name="mdp2" id="mdp2" required>
+        
+       <span id="infoMdp"></span>
+          <p>
+            <label for="courriel">Courriel</label> :<br>
+            <input type="email" name="courriel" id="courriel" required placeholder="utilisateur@domaine.fr">
+            <span id="aideCourriel"></span>
+        </p>
+        <p>
+            <input type="checkbox" name="confirmation" id="confirmation">
+            <label for="confirmation">M'envoyer un courriel de confirmation</label>
+        </p>
+        <p>
+            <input type="radio" name="sexe" id="Homme" value="Homme">
+            <label for="Homme">Homme</label>
+           
+            <input type="radio" name="sexe" id="Femme" value="Femme">
+            <label for="Femme">Femme</label>
+            <br>
+            
+        </p>
+        <p>
+            <label for="nationalite">Nationalité :</label>
+            <select name="nationalite" id="nationalite">
+                <option value="alg" selected>algérian</option>
+                <option value="tun">tunisian</option>
+                <option value="pal">Palestine</option>
+                <option value="XX">Autre</option>
+            </select>
+        </p>
+       <p>Birthday:<input type="date" name="bday" min="2000-01-01" max="2010-12-31">
+	   </p>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </form></center>
+
+<script src="formulaire.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

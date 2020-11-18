@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'neontubes';
+  src: url("NeonTubes/NeonTubes2.otf")
+}
+body{
+  background: radial-gradient(
+    circle,
+    rgba(119, 13, 13, 0.92) 80%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+
+  color: #ee990f;
+  font-family: 'neontubes';
+  overflow: hidden;
+}
+
+audio{
+  visibility: visible;
+}
+.container{
+  text-align: center;
+  line-height: 70px;
+  height: 100;
+}
+
+.container h1{
+  margin-top: 140px;
+font-size: 7em;
+text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+
+}
+
+.container h5{
+  float: right;
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  color: white;
+}
+
+.container h2{
+
+  font-size: 5em;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+
+}
+
+.line{
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+
+  }
+
+  .container .img1{
+    float: right;
+    margin-top: -70px;
+    margin-right: 100px;
+    box-shadow: 0px 10px 10px -15px #111;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .container .img2{
+float: left;
+margin-top: -70px;
+margin-left: 100px;
+height: 200px;
+width: 200px;
+  }
+
+  h3{
+    display: inline;
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .container{
+
+line-height: 50px;
+
+    }
+  .container h1{
+ font-size: 5em;
+}
+
+.container h2{
+font-size: 3em;
+margin-top: -10px;
+}
+.line{
+font-size:1em ;
+text-align: center;
+margin-top: -30px;
+
+}
+
+.container .img1{
+
+  height: 150px;
+  width: 150px;
+  float: right;
+margin-right: -15px;
+margin-top: 0px;
+cursor: pointer;
+}
+.container .img2{
+height: 150px;
+width: 150px;
+float: left;
+margin-left: -8px;
+margin-top: 0px;
+
+
+}
+  }
+
+  @media screen and (min-width: 400px) and (max-width:900px) {
+    audio{
+      height: 40px;
+      margin-top: 20px;
+    }
+    .container{
+
+line-height: 50px;
+
+    }
+  .container h1{
+ font-size: 4em;
+}
+
+.container h2{
+font-size: 3em;
+margin-top: -20px;
+}
+.line{
+font-size:1.5em ;
+text-align: center;
+margin-top: -10px;
+
+}
+
+.container .img1{
+
+  height: 200px;
+  width: 200px;
+  float: right;
+margin-right: -5px;
+margin-top: 0px;
+}
+.container .img2{
+height: 200px;
+width: 200px;
+float: left;
+margin-left: -8px;
+margin-top: 0px;
+
+
+}
+  }
+
+audio{
+  display: none;
+}
+
+  .wishTitle{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: 40px;
+    font-family: 'Princess Sofia', cursive;    
+    font-size:1.6rem;
+    font-weight: bold;
+ 
+    display: flex;
+ }
+ 
+
+
+ .wish-text{
+   padding-left: 0.9rem;
+   color:  rgb(255, 0, 59);
+
+ }
+ 
+ .wish-text:nth-of-type(1),.wish-text:nth-of-type(6),.wish-text:nth-of-type(11){
+    animation: upDown .8s infinite;
+    color: rgb(255, 0, 59);
+ }
+ 
+ .wish-text:nth-of-type(2),.wish-text:nth-of-type(7),.wish-text:nth-of-type(12){
+    animation: upDown .8s.2s infinite;
+    color: rgb(255, 0, 59);;
+ }
+ 
+ .wish-text:nth-of-type(3),.wish-text:nth-of-type(8),.wish-text:nth-of-type(13){
+    animation: upDown .8s .4s infinite;
+    color: rgb(255, 0, 59);
+ }
+ 
+ .wish-text:nth-of-type(4),.wish-text:nth-of-type(9),.wish-text:nth-of-type(14){
+    animation: upDown .8s .5s infinite;
+    color: rgb(255, 0, 59);
+ }
+ 
+ .wish-text:nth-of-type(5),.wish-text:nth-of-type(10){
+    animation: upDown .8s .1s infinite;
+    color: rgb(255, 0, 59);
+ }
+ 
+ .wish-text:nth-of-type(6){
+    padding-left: 2rem;
+ }
+ 
+ @keyframes upDown{
+ 
+    0%,100%{
+       transform:translateY(0rem);
+    }
+ 
+    50%{
+       transform:translateY(1rem);
+    }
+ 
+ }
+
+
+
+ 
