@@ -1,4 +1,4 @@
-## OpenMindsClub Joins Hacktoberfest 2020! ##
+## HELLO MADAFAKA ##
 
 ![Event logo](https://www.pixenli.com/image/sbWyjrII)
 
