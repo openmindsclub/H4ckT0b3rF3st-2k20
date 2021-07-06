@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1603653645 source:c:\users\wass\desktop\tp-openclasroom\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1603658287 source:c:\users\wass\desktop\random-number-game-\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+
