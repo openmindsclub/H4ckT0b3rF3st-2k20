@@ -1,0 +1,16 @@
+body {
+	background-color : pink;
+}
+
+
+#aidePseudo,#infoMdp,#aideCourriel{
+	color: red;
+	left : 57%;
+	position : absolute;
+}
+#aideMdp{
+left : 57%;
+position : absolute;
+}
+
+
