@@ -39,3 +39,11 @@
 #### [chaima07](https://github.com/chaima07)
 
 #### [rayanz2001](https://github.com/rayanz2001)
+
+#### [sophynez](https://github.com/sophynez)
+
+### [Kizito007](https://github.com/Kizito007)
+
+### [bl4cklov3l](https://github.com/bl4cklov3l)
+
+#### [yasserbelhimer](https://github.com/yasserbelhimer)
